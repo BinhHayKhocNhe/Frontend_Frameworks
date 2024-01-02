@@ -1,0 +1,116 @@
+/* Reset css */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* trick */
+    font-size: 62.5%;
+    /* line-height: 1.6rem; */
+    /* font-family: Helvetica, Arial, sans-serif; */
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.header__img--logo {
+    width: 50px;
+    object-fit: cover;
+
+}
+
+.header__icons>a>i {
+    transition: 0.3s;
+}
+
+.header__icons a:hover i.text-white {
+    color: #d02908 !important;
+    opacity: 0.8;
+}
+
+.background-nav {
+    padding-top: 66px;
+    padding-bottom: 16px;
+    background-color: #c2d0de;
+}
+
+.nav__hover {
+    transition: 0.5s;
+}
+
+.nav__hover a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    color: red !important;
+}
+
+.background-nav li {
+    font-size: 1.4rem;
+}
+
+.nav__hover--overflow {
+    overflow: hidden;
+}
+
+.dropdown-item__margin {
+    margin-right: 5px;
+}
+
+.slider__img--maxheight img {
+    max-height: 620px;
+}
+
+.background-content {
+    background-color: #c2d0de;
+    font-size: 1.4rem;
+}
+
+.tab-item {
+    overflow: hidden;
+}
+
+.tab-item a {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.tab-item a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    color: red;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+.about-list {
+    max-width: 400px;
+}
+
+.about-btn {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.about-text,
+.about-item {
+    font-size: 1.4rem;
+}
+
+.about-item {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
