@@ -109,8 +109,68 @@ header {
     cursor: pointer;
 }
 
+.about-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
 .product-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.card-title--text {
+    font-size: 1.4rem;
+}
+
+.card-text--text {
+    font-size: 1.3rem;
+    height: 90px;
+    /* Đặt chiều cao mặc định */
+}
+
+.card-star {
+    color: rgb(249, 249, 69);
+}
+
+.boximg {
+    overflow: hidden;
+    position: relative;
+}
+
+.bogimg img {
+    width: 300px;
+    height: 300px;
+}
+
+
+.card-sale-off {
+    position: absolute;
+    top: 0;
+    right: 0;
+    user-select: none;
+    padding: 10px;
+    color: white;
+    background-color: #d02908;
+    border-radius: 2px;
+}
+
+.card-img__hover {
+    opacity: 1;
+    transition: linear 0.3s;
+}
+
+.card-img__hover:hover {
+    opacity: 0.8;
+    transform: scale(1.3) rotate(2deg);
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+    .nav__hover a:hover {
+        transform: scale(0.95);
+        transition: transform 0.3s ease-in-out 0s; /* Áp dụng transition cho màu chữ */
+        color: red !important; /* Đặt màu chữ khi hover */
+    }
 }

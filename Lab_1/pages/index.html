@@ -32,6 +32,11 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item nav__hover">
@@ -154,11 +159,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="card mb-3" style="max-width: 100%;">
+                        <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-3">
-                                    <img src="/assets/img/img-1.jpg" class="img-fluid rounded-start" alt="..."
-                                        style="max-width: 300px;">
+                                    <img src="/assets/img/img-1.jpg" class="img-fluid rounded-start about-img"
+                                        alt="...">
                                 </div>
                                 <div class="col-md-9">
                                     <div class="card-body text-justify">
@@ -212,189 +217,349 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-3 mb-4">
-                    <div class="card">
-                        <img src="/assets/img/product-1.jpeg" class="card-img-top" alt="...">
+                <div class="col-lg-3 col-sm-6 mb-4 d-flex">
+                    <div class="card card-hover flex-fill">
+                        <div class="boximg">
+                            <img src="/assets/img/product-1.jpeg" class="card-img-top card-img__hover" alt="...">
+                        </div>
+                        <div class="card-sale-off">
+                            40%
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Helmet</h5>
-                            <p class="card-text">Hpro half-head helmet Fashionable and stylish colorful helmet, with UV
+                            <h5 class="card-title card-title--text">Helmet</h5>
+                            <p class="card-text card-text--text">Hpro half-head helmet Fashionable and stylish colorful
+                                helmet, with UV
                                 glasses</p>
                         </div>
                         <ul class="list-group list-group-flush product-list">
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <p
-                                    class="product-item__price--old mb-0 text-decoration-line-through text-secondary-emphasis">
+                                    class="product-item__price--old mb-0 text-decoration-line-through text-secondary-emphasis fs-5">
                                     75$</p>
-                                <p class="product-item__price--new mb-0 text-danger">55$</p>
+                                <p class="product-item__price--new mb-0 text-danger fs-5">55$</p>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <p class="mb-0">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
+                                <p class="mb-0 fs-5">
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
                                 </p>
-                                <p class="mb-0">
+                                <p class="mb-0 fs-5">
                                     <i class="fa-solid fa-truck-fast"></i>
                                     Freeship
                                 </p>
                             </li>
                         </ul>
                         <div class="card-body mb-0 d-flex">
-                            <button type="button" class="btn btn-warning" style="margin: 0 auto;">
+                            <button type="button" class="btn btn-warning fs-5" style="margin: 0 auto;">
                                 <i class="bi bi-cart-plus-fill"></i>
                                 Add to card
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 mb-4">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make
-                                up the bulk
-                                of the card's content.</p>
+                <div class="col-lg-3 col-sm-6 mb-4 d-flex">
+                    <div class="card card-hover flex-fill">
+                        <div class="boximg">
+                            <img src="/assets/img/product-2.jpeg" class="card-img-top card-img__hover" alt="...">
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
+                        <div class="card-sale-off">
+                            40%
+                        </div>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title card-title--text">Bag</h5>
+                            <p class="card-text card-text--text">Backpack for School and Outings for Men and Women
+                                Korean Fashion Many Protections Convenient to Fit 15.6inch Laptop BALO101</p>
+                        </div>
+                        <ul class="list-group list-group-flush product-list">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p
+                                    class="product-item__price--old mb-0 text-decoration-line-through text-secondary-emphasis fs-5">
+                                    45$</p>
+                                <p class="product-item__price--new mb-0 text-danger fs-5">25$</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p class="mb-0 fs-5">
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill "></i>
+                                </p>
+                                <p class="mb-0 fs-5">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    Freeship
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="card-body mb-0 d-flex">
+                            <button type="button" class="btn btn-warning fs-5" style="margin: 0 auto;">
+                                <i class="bi bi-cart-plus-fill"></i>
+                                Add to card
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 mb-4">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                <div class="col-lg-3 col-sm-6 mb-4 d-flex">
+                    <div class="card card-hover flex-fill">
+                        <div class="boximg">
+                            <img src="/assets/img/product-3.jpeg" class="card-img-top card-img__hover" alt="...">
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
+                        <div class="card-sale-off">
+                            15%
+                        </div>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title card-title--text">Women's handbags</h5>
+                            <p class="card-text card-text--text">
+                                High quality soft leather large office women's handbag TX12
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush product-list">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p
+                                    class="product-item__price--old mb-0 text-decoration-line-through text-secondary-emphasis fs-5">
+                                    75$</p>
+                                <p class="product-item__price--new mb-0 text-danger fs-5">55$</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p class="mb-0 fs-5">
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                </p>
+                                <p class="mb-0 fs-5">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    Freeship
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="card-body mb-0 d-flex">
+                            <button type="button" class="btn btn-warning fs-5" style="margin: 0 auto;">
+                                <i class="bi bi-cart-plus-fill"></i>
+                                Add to card
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 mb-4">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
+                <div class="col-lg-3 col-sm-6 mb-4 d-flex">
+                    <div class="card card-hover flex-fill">
+                        <div class="boximg">
+                            <img src="/assets/img/product-4.jpeg" class="card-img-top card-img__hover" alt="...">
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
+                        <div class="card-sale-off">
+                            40%
+                        </div>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title card-title--text">Earphone</h5>
+                            <p class="card-text card-text--text">Bluetooth Cat Headphones P47 P47M, Cat Ear Earphone
+                                with Mic, Powerful Bass Listen to Great Music 3.5mm jack</p>
+                        </div>
+                        <ul class="list-group list-group-flush product-list">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p
+                                    class="product-item__price--old mb-0 text-decoration-line-through text-secondary-emphasis fs-5">
+                                    75$</p>
+                                <p class="product-item__price--new mb-0 text-danger fs-5">55$</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p class="mb-0 fs-5">
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                </p>
+                                <p class="mb-0 fs-5">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    Freeship
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="card-body mb-0 d-flex">
+                            <button type="button" class="btn btn-warning fs-5" style="margin: 0 auto;">
+                                <i class="bi bi-cart-plus-fill"></i>
+                                Add to card
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up
-                                the bulk
-                                of the card's content.</p>
+                <div class="col-lg-3 col-sm-6 mb-4 d-flex">
+                    <div class="card card-hover flex-fill">
+                        <div class="boximg">
+                            <img src="/assets/img/product-1.jpeg" class="card-img-top card-img__hover" alt="...">
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
+                        <div class="card-sale-off">
+                            40%
+                        </div>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title card-title--text">Helmet</h5>
+                            <p class="card-text card-text--text">Hpro half-head helmet Fashionable and stylish colorful
+                                helmet, with UV
+                                glasses</p>
+                        </div>
+                        <ul class="list-group list-group-flush product-list">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p
+                                    class="product-item__price--old mb-0 text-decoration-line-through text-secondary-emphasis fs-5">
+                                    75$</p>
+                                <p class="product-item__price--new mb-0 text-danger fs-5">55$</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p class="mb-0 fs-5">
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                </p>
+                                <p class="mb-0 fs-5">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    Freeship
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="card-body mb-0 d-flex">
+                            <button type="button" class="btn btn-warning fs-5" style="margin: 0 auto;">
+                                <i class="bi bi-cart-plus-fill"></i>
+                                Add to card
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up
-                                the bulk
-                                of the card's content.</p>
+                <div class="col-lg-3 col-sm-6 mb-4 d-flex">
+                    <div class="card card-hover flex-fill">
+                        <div class="boximg">
+                            <img src="/assets/img/product-2.jpeg" class="card-img-top card-img__hover" alt="...">
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
+                        <div class="card-sale-off">
+                            40%
+                        </div>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title card-title--text">Bag</h5>
+                            <p class="card-text card-text--text">Backpack for School and Outings for Men and Women
+                                Korean Fashion Many Protections Convenient to Fit 15.6inch Laptop BALO101</p>
+                        </div>
+                        <ul class="list-group list-group-flush product-list">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p
+                                    class="product-item__price--old mb-0 text-decoration-line-through text-secondary-emphasis fs-5">
+                                    45$</p>
+                                <p class="product-item__price--new mb-0 text-danger fs-5">25$</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p class="mb-0 fs-5">
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill "></i>
+                                </p>
+                                <p class="mb-0 fs-5">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    Freeship
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="card-body mb-0 d-flex">
+                            <button type="button" class="btn btn-warning fs-5" style="margin: 0 auto;">
+                                <i class="bi bi-cart-plus-fill"></i>
+                                Add to card
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up
-                                the bulk
-                                of the card's content.</p>
+                <div class="col-lg-3 col-sm-6 mb-4 d-flex">
+                    <div class="card card-hover flex-fill">
+                        <div class="boximg">
+                            <img src="/assets/img/product-3.jpeg" class="card-img-top card-img__hover" alt="...">
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
+                        <div class="card-sale-off">
+                            15%
+                        </div>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title card-title--text">Women's handbags</h5>
+                            <p class="card-text card-text--text">
+                                High quality soft leather large office women's handbag TX12
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush product-list">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p
+                                    class="product-item__price--old mb-0 text-decoration-line-through text-secondary-emphasis fs-5">
+                                    75$</p>
+                                <p class="product-item__price--new mb-0 text-danger fs-5">55$</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p class="mb-0 fs-5">
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                </p>
+                                <p class="mb-0 fs-5">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    Freeship
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="card-body mb-0 d-flex">
+                            <button type="button" class="btn btn-warning fs-5" style="margin: 0 auto;">
+                                <i class="bi bi-cart-plus-fill"></i>
+                                Add to card
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up
-                                the bulk
-                                of the card's content.</p>
+                <div class="col-lg-3 col-sm-6 mb-4 d-flex">
+                    <div class="card card-hover flex-fill">
+                        <div class="boximg">
+                            <img src="/assets/img/product-4.jpeg" class="card-img-top card-img__hover" alt="...">
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
+                        <div class="card-sale-off">
+                            40%
+                        </div>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title card-title--text">Earphone</h5>
+                            <p class="card-text card-text--text">Bluetooth Cat Headphones P47 P47M, Cat Ear Earphone
+                                with Mic, Powerful Bass Listen to Great Music 3.5mm jack</p>
+                        </div>
+                        <ul class="list-group list-group-flush product-list">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p
+                                    class="product-item__price--old mb-0 text-decoration-line-through text-secondary-emphasis fs-5">
+                                    75$</p>
+                                <p class="product-item__price--new mb-0 text-danger fs-5">55$</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <p class="mb-0 fs-5">
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                    <i class="bi bi-star-fill card-star"></i>
+                                </p>
+                                <p class="mb-0 fs-5">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    Freeship
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="card-body mb-0 d-flex">
+                            <button type="button" class="btn btn-warning fs-5" style="margin: 0 auto;">
+                                <i class="bi bi-cart-plus-fill"></i>
+                                Add to card
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
-
-
 
     <script src="/assets/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
 </body>
