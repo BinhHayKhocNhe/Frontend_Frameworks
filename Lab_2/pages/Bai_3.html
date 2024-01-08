@@ -9,28 +9,196 @@
 </head>
 
 <body>
-    <div class="container-fluid mt-5 w-50">
+    <div class="container-fluid mt-5 w-50 border p-4 rounded-3 size">
         <div class="container">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Cập nhật</button>
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                        <i class="bi bi-pencil-square"></i>
+                        <span>Cập nhật</span>
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Danh
-                        sách</button>
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                        <i class="bi bi-list-task"></i>
+                        <span>Danh sách</span>
+                    </button>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                    tabindex="0">1</div>
+                    tabindex="0">
+                    <div class="card mt-3">
+                        <div class="card-header text-center">
+                            <i class="bi bi-pencil-square"></i>
+                            <span>Nhập lương tháng 12</span>
+                        </div>
+                        <form class="mb-0">
+                            <div class="row mx-2 mt-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleInputText" class="form-label">Mã nhân viên</label>
+                                        <input type="text" class="form-control" id="exampleInputText"
+                                            placeholder="Nhập mã nhân viên" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleInputText" class="form-label">Họ và tên</label>
+                                        <input type="text" class="form-control" id="exampleInputText"
+                                            placeholder="Nhập họ và tên" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="clubSelect" class="form-label">Câu lạc bộ</label>
+                                        <select class="form-select" id="clubSelect">
+                                            <option value="option1">Sông Lam Nghệ An</option>
+                                            <option value="option2">Hoàng Anh Gia Lai</option>
+                                            <option value="option3">Khác</option>
+                                            <!-- Add more options as needed -->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="salaryInput" class="form-label">Lương</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" id="salaryInput"
+                                            placeholder="Nhập số lương" required>
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="bonusInput" class="form-label">Thưởng</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" id="bonusInput"
+                                            placeholder="Nhập số tiền thưởng" required>
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="allowanceInput" class="form-label">Phụ cấp</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" id="allowanceInput"
+                                            placeholder="Nhập số tiền phụ cấp" required>
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="text-ghichu" class="form-label">Ghi chú</label>
+                                        <textarea class="form-control" id="commentInput" rows="4"
+                                            placeholder=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-save"></i>
+                                        <span>Lưu</span>
+                                    </button>
+                                    <button type="submit" class="btn btn-secondary">
+                                        <i class="bi bi-box-arrow-right"></i>
+                                        <span>Hủy</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="card-footer">
+                            Vui lòng nhập thông tin lương cầu thủ
+                        </div>
+                    </div>
+                </div>
                 <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                    tabindex="1">2</div>
+                    tabindex="1">
+                    <div class="container mt-3">
+                        <div class="card">
+                            <div class="card-header text-center col-12">
+                                <i class="bi bi-list-task"></i>
+                                <span>Bảng lương tháng 12</span>
+                            </div>
+                            <table class="table table-bordered table-hover table-responsive mb-0 fs">
+                                <thead class="table-success text-center text-uppercase">
+                                    <tr>
+                                        <th scope="col" rowspan="2" class="align-middle">Mã nhân viên</th>
+                                        <th scope="col" rowspan="2" class="align-middle">Họ và tên</th>
+                                        <th colspan="3">Thu nhập</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Lương</th>
+                                        <th>Thưởng</th>
+                                        <th>Phụ cấp</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>PS32770</td>
+                                        <td>Dương Minh Bình</td>
+                                        <td class="text-end">400000</td>
+                                        <td class="text-end">100000</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PS32001</td>
+                                        <td>Đỗ Mỹ Thuận</td>
+                                        <td class="text-end">100000</td>
+                                        <td class="text-end">5000</td>
+                                        <td class="text-end">2500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PS32002</td>
+                                        <td>Trần Văn Việt</td>
+                                        <td class="text-end">100000</td>
+                                        <td class="text-end">5000</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="card-footer">
+                                <span class="">
+                                    Lương của cầu thủ và huấn luyện viên chuyên nghiệp
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var salaryInput = document.getElementById("salaryInput");
+        var bonusInput = document.getElementById("bonusInput");
+        var allowanceInput = document.getElementById("allowanceInput");
+
+        function validateInput(inputElement) {
+            var inputValue = parseFloat(inputElement.value);
+
+            if (isNaN(inputValue) || inputValue < 0) {
+                alert("Tiền phải lớn hơn hoặc bằng 0");
+                inputElement.value = 0;
+            }
+        }
+
+        salaryInput.addEventListener("input", function () {
+            validateInput(salaryInput);
+        });
+
+        bonusInput.addEventListener("input", function () {
+            validateInput(bonusInput);
+        });
+
+        allowanceInput.addEventListener("input", function () {
+            validateInput(allowanceInput);
+        });
+    });
+</script>
 
 </html>
