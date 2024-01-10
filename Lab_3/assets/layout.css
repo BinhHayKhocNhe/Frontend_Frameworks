@@ -8,13 +8,16 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
 .text-size,
 .nav-list {
     font-size: 1.4rem;
 }
+
 .nav-list>li>a:hover {
     color: red;
 }
+
 header {
     position: relative;
 }
@@ -22,7 +25,7 @@ header {
 header img {
     width: 100%;
     max-height: 400px;
-    
+
     object-fit: cover;
 }
 
@@ -74,6 +77,14 @@ header img {
     font-size: 1.2rem;
     color: #666;
 }
+#collapseThree li:hover,
+#collapseTwo li:hover,
+#collapseOne li:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+}
+
+
 
 @media (max-width: 767px) {
     .size-img {
@@ -81,6 +92,8 @@ header img {
         /* Kích thước cho điện thoại */
     }
 }
+
+@media (max-width: 600px) {}
 
 /* Thiết lập kích thước cho tablet (768px đến 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
