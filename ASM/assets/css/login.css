@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/assets/img/background.jpg');
+    background-size: cover; /* Đảm bảo hình nền kích thước để phủ toàn bộ phần thân */
+    background-position: center; /* Đặt vị trí hình nền ở giữa */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-attachment: fixed; /* Giữ hình nền cố định khi trang cuộn */
+}
