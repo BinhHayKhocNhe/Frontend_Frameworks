@@ -44,3 +44,15 @@ small {
         margin: 0 10px;
     }
 }
+
+.input-pass {
+    border-top-right-radius: 7px !important;
+    border-bottom-right-radius: 7px !important;
+}
+
+.btn-eye {
+    right: 12px;
+    height: 100%;
+    color: #212529;
+    border: none;
+}
