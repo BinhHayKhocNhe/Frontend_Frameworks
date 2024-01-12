@@ -11,15 +11,49 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="featured-image">
-                    <img src="/assets/img/img-login.jpg" alt="img-fluid" style="width: 250px;">
-                </div>
-                <p></p>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounded bg-light shadow size-box">
+            <div class="col-md-6 left-box border rounded">
             </div>
-            <div class="col-md-6">a</div>
+            <div class="col-md-6 right-box border rounded">
+                <div class="row">
+                    <div class="mb-4 ">
+                        <h3>Đăng nhập</h3>
+                        <p>Xin chào mừng trở lại! Vui lòng đăng nhập để sử dụng dịch vụ.</p>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Username"
+                            aria-describedby="basic-addon1" id="floatingInput" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Mật khẩu" aria-label="Password"
+                            aria-describedby="basic-addon1" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input class="form-check-input me-2" type="checkbox" value=""
+                            aria-label="Checkbox for following text input" checked="false">
+                        <span>Lưu đăng nhập</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-primary w-100 rounded" type="button" id="button-addon1">Đăng
+                            nhập</button>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center">Hoặc</div>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-primary w-100 rounded" type="button" id="button-addon2">
+                            <span><img src="/assets/img/google.png" alt="" class="img-fluid img-google"></span>
+                            Đăng nhập với Google</button>
+                    </div>
+                    <div class="input-group mb-3 d-flex justify-content-between">
+                        <a href="#" class="text-decoration-none">Quên mật khẩu</a>
+                        <p>Chưa có tài khoản?
+                            <a href="#" class="text-decoration-none" style="user-select: none;"> Đăng kí</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
