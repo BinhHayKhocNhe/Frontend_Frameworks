@@ -8,9 +8,11 @@
 .header-contact {
     overflow: hidden;
 }
-.header-contact >li>a{
+
+.header-contact>li>a {
     color: aliceblue;
 }
+
 .header-contact>li>a:hover {
     background-color: rgba(0, 0, 0, 0.05);
     transform: scale(1.02);
@@ -21,3 +23,28 @@
 .header-contact>li>a:active {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+.img-logo {
+    max-width: 120px;
+}
+
+@media (max-width: 812px) {
+    .header-phone {
+        margin-right: 20px;
+    }
+
+    .btn-header-contact {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-logo{
+        display: none;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+  }
