@@ -28,6 +28,19 @@
     max-width: 120px;
 }
 
+.box-img {
+    overflow: hidden;
+}
+
+.box-img-hover {
+    transition: 0.5s;
+}
+
+.box-img-hover:hover {
+    transform: scale(1.2) rotate(2deg);
+
+}
+
 @media (max-width: 812px) {
     .header-phone {
         margin-right: 20px;
@@ -39,12 +52,17 @@
 }
 
 @media (max-width: 768px) {
-    .img-logo{
+    .img-logo {
         display: none;
     }
+
+    .mb-24 {
+        margin-bottom: 24px;
+    }
 }
+
 @media (prefers-reduced-motion: no-preference) {
     :root {
-      scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
-  }
+}
