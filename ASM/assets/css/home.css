@@ -41,12 +41,36 @@
 
 }
 
+.tour--item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.55s;
+}
+
+@media (width: 1024px) {
+
+    .flexcolumn {
+        flex-direction: row;
+    }
+
+    .img-none {
+        display: none;
+    }
+}
+
 @media (max-width: 812px) {
     .header-phone {
         margin-right: 20px;
     }
 
     .btn-header-contact {
+        display: none;
+    }
+
+    .flexcolumn {
+        flex-direction: column;
+    }
+    .img-logo {
         display: none;
     }
 }
