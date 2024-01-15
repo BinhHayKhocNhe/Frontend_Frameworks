@@ -9,27 +9,28 @@
 </head>
 
 <body>
-    <div class="container h-100 d-flex justify-content-center align-items-center">
-        <form class="w-50">
+    <div ng-app="myApp" class="container h-100 d-flex justify-content-center align-items-center">
+        <form ng-controller="calc" class="w-50">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nhập chiều dài</label>
-                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="lenght">
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="lenght"
+                    ng-model="lenght">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Nhập chiều rộng</label>
-                <input type="password" class="form-control" id="width">
+                <input type="number" class="form-control" id="width" ng-model="width">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">
                     Chu vi
                 </label>
-                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="Chuvi" disabled>
+                <label class="form-control" id="exampleInputEmail1" disabled ng-bind="chuVi"></label>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Diện tích</label>
-                <input type="password" class="form-control" id="DienTich" disabled>
+                <label class="form-control" id="DienTich" disabled ng-bind="dienTich"></label>
             </div>
-            <button type="submit" class="btn btn-primary">Tính</button>
+            <button type="submit" class="btn btn-primary" ng-click="calculate()">Tính</button>
         </form>
     </div>
     <script src="/assets/js/Bai_4.js"></script>

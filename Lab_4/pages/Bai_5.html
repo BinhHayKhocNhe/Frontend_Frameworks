@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body>
+    <div ng-app="myApp" class="container h-100 d-flex justify-content-center align-items-center">
+        <form ng-controller="myCtrl" class="w-50">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Họ và tên</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="lenght"
+                    ng-model="student.fullname">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Ngày sinh</label>
+                <input type="text" class="form-control" id="width" ng-model="student.birthday">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">
+                    Giới tính
+                </label>
+                <select class="form-select" aria-label="Default select example" ng-model="student.gender">
+                    <option selected>Nam</option>
+                    <option value="1">Nữ</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Điểm</label>
+                <input type="number" class="form-control" id="width" ng-model="student.mark">
+            </div>
+            <div class="form-group mb-3">
+                <label for="" class="form-label">Học lực</label>
+                <label for="" class="form-control" ng-bind="student.grade"></label>
+            </div>
+            <button type="submit" class="btn btn-primary" ng-click="save()">Kiểm tra</button>
+        </form>
+    </div>
+    <script src="/assets/js/Bai_5.js"></script>
+    <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
