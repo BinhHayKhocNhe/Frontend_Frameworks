@@ -32,19 +32,30 @@
     overflow: hidden;
 }
 
-.box-img-hover {
+.box-img img {
     transition: 0.5s;
 }
 
-.box-img-hover:hover {
-    transform: scale(1.2) rotate(2deg);
-
+.box-img:hover img {
+    transform: scale(1.1) rotate(3deg);
 }
 
 .tour--item:hover {
     transform: translateY(-10px);
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
     transition: 0.55s;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    /* Số dòng muốn hiển thị */
+    max-height: 5em;
+    /* Chiều cao tối đa của 2 dòng */
+    text-align: justify;
 }
 
 @media (width: 1024px) {
@@ -70,10 +81,12 @@
     .flexcolumn {
         flex-direction: column;
     }
+
     .img-logo {
         display: none;
     }
 }
+
 
 @media (max-width: 768px) {
     .img-logo {

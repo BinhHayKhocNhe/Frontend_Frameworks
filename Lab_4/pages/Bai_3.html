@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<style>
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div class="container" ng-app="myApp">
+        <table class="table table-hover table-bordered" ng-controller="myCtrl">
+            <thead>
+                <tr>
+                    <th scope="col">Hình</th>
+                    <th scope="col">Họ và tên</th>
+                    <th scope="col">Ngày sinh</th>
+                    <th scope="col">Giới tính</th>
+                    <th scope="col">Điểm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="{{students[0].photo}}" alt="">
+                    </td>
+                    <td>{{students[0].fullname}}</td>
+                    <td>{{students[0].birthday}}</td>
+                    <td>{{students[0].gender}}</td>
+                    <td>{{students[0].mark}}</td>
+                </tr>
+                <tr>
+                    <td><img src="{{students[1].photo}}" alt=""></td>
+                    <td>{{students[1].fullname}}</td>
+                    <td>{{students[1].birthday}}</td>
+                    <td>{{students[1].gender}}</td>
+                    <td>{{students[1].mark}}</td>
+                </tr>
+                <tr>
+                    <td><img src="{{students[2].photo}}" alt=""></td>
+                    <td>{{students[2].fullname}}</td>
+                    <td>{{students[2].birthday}}</td>
+                    <td>{{students[2].gender}}</td>
+                    <td>{{students[2].mark}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="/assets/js/Bai_3.js"></script>
+    <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
