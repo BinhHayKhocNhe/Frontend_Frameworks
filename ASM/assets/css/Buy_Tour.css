@@ -1,9 +1,14 @@
 :root {
-    --color-blog: #2195c3;
+    --color-header-card: #005294;
+    --color-aside: #ffb13e;
 }
 
 body {
     background-color: #faf8f9;
+}
+
+header {
+    background-color: #fff;
 }
 
 .header-items img {
@@ -17,15 +22,15 @@ body {
     overflow: hidden;
 }
 
-.header-contact>li>a {
-    color: aliceblue;
+.header-contact li {
+    background-color: aliceblue;
 }
 
 .header-contact>li>a:hover {
     background: rgb(202 201 201 / 40%);
     transform: scale(1.02);
     transition: transform 0.2s ease-in-out;
-    color: aliceblue;
+    color: #000;
 }
 
 .header-contact>li>a:active {
@@ -36,42 +41,22 @@ body {
     background: rgb(202 201 201 / 40%);
 }
 
-
-
-.box-img {
-    overflow: hidden;
+.card-header {
+    background-color: var(--color-header-card);
 }
 
-.box-img img {
-    transition: 1s;
+.pad-top {
+    padding-top: calc(109.6px + 24px);
 }
 
-.box-img:hover img {
-    transform: scale(1.2) rotate(3deg);
+.width-option{
+    width: 200px;
+}
+.card-header-bg{
+    background-color: var(--color-aside);
 }
 
-.tour--item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
-    transition: 0.55s;
-}
 
-.card-text {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    /* Số dòng muốn hiển thị */
-    max-height: 5em;
-    /* Chiều cao tối đa của 2 dòng */
-    text-align: justify;
-}
-
-.blog-title:hover {
-    transition: 0.25s;
-    color: var(--color-blog) !important;
-}
 
 .color-footer a {
     color: rgb(50, 47, 47);
@@ -81,27 +66,7 @@ body {
 .color-footer a:hover {
     color: rgb(206, 85, 85);
 }
-
-.fixed-header {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    background-color: #fff !important;
-    z-index: 1000;
-    transition: 0.25s;
-}
-
-.fixed-header ul {
-    background-color: #fff !important;
-}
-
-.fixed-header a,
-.fixed-header i {
-    color: #000 !important;
-}
-
 @media (width: 1024px) {
-
     .flexcolumn {
         flex-direction: row;
     }
@@ -111,7 +76,24 @@ body {
         display: none;
     }
 }
-
+@media(max-width:1024px){
+    .btn-header-contact{
+        display: none !important;
+    }
+    .flex__column{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .width-option{
+        width: 100%;
+    }
+    .mb-24 {
+        margin-bottom: 24px;
+    }
+    .pad-top{
+        padding-top: calc(109.6px - 28px);
+    }
+}
 @media (max-width: 812px) {
     .header-phone {
         margin-right: 20px;
@@ -131,6 +113,11 @@ body {
     }
 }
 
+/* Đặt kích thước font cho placeholder */
+#floatingInput::placeholder {
+    font-size: 1px !important;
+    /* Thay đổi kích thước theo ý muốn của bạn */
+}
 
 @media (max-width: 768px) {
     .img-logo {
