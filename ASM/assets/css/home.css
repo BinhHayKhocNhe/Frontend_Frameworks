@@ -1,3 +1,11 @@
+:root {
+    --color-blog: #2195c3;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.005);
+}
+
 .header-items img {
     max-width: 25px;
     height: 25px;
@@ -14,7 +22,7 @@
 }
 
 .header-contact>li>a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background: rgb(202 201 201 / 40%);
     transform: scale(1.02);
     transition: transform 0.2s ease-in-out;
     color: aliceblue;
@@ -24,20 +32,22 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.img-logo {
-    max-width: 120px;
+.header-nav-menu a:hover {
+    background: rgb(202 201 201 / 40%);
 }
+
+
 
 .box-img {
     overflow: hidden;
 }
 
 .box-img img {
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .box-img:hover img {
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.2) rotate(3deg);
 }
 
 .tour--item:hover {
@@ -58,13 +68,41 @@
     text-align: justify;
 }
 
+.blog-title:hover {
+    transition: 0.25s;
+    color: var(--color-blog) !important;
+}
+
+.color-footer a {
+    color: rgb(50, 47, 47);
+    font-size: 14px;
+}
+
+.color-footer a:hover {
+    color: rgb(206, 85, 85);
+}
+
+.fixed-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    background-color: #fff !important;
+    z-index: 1000;
+    transition: 0.25s;
+}
+.fixed-header ul{
+    background-color: #fff !important;
+}
+.fixed-header a{
+    color: #000 !important;
+}
 @media (width: 1024px) {
 
     .flexcolumn {
         flex-direction: row;
     }
 
-    .img-none {
+    .container-hotline, .img-none {
         display: none;
     }
 }
@@ -82,7 +120,7 @@
         flex-direction: column;
     }
 
-    .img-logo {
+    .container-hotline, .img-logo {
         display: none;
     }
 }

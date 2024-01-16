@@ -93,8 +93,9 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <header class="container-fluid position-absolute top-0 border-bottom border-secondary">
-        <div class="container">
+    <header class="container-fluid position-absolute top-0 border-bottom border-secondary"
+        style="background: rgba(255,255,255,0.1);" id="header">
+        <div class="container container-hotline">
             <div class="row d-flex justify-content-between mt-3">
                 <div class="header-items col-md-8 col-sm-10 d-flex align-items-center">
                     <div class="col-md-5 col-sm-6">
@@ -135,7 +136,7 @@
             <div class="row">
                 <div class="col-md-2">
                     <a href="#">
-                        <img src="/assets/img/logo.png" alt="" class="img-logo">
+                        <img src="/assets/img/img-logo.png" alt="" class="w-100 img-logo">
                     </a>
                 </div>
                 <div class="col-md-10">
@@ -147,7 +148,7 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                <ul class="navbar-nav">
+                                <ul class="navbar-nav header-nav-menu">
                                     <li class="nav-item">
                                         <a class="nav-link text-light" aria-current="page" href="#">Trang chủ</a>
                                     </li>
@@ -220,9 +221,9 @@
             </div>
         </div>
     </header>
-    <div class="content mt-3 mb-3">
+    <div class="content mt-3">
         <h3 class="text-center mb-3 text-uppercase">Tour nổi bật trong tháng</h3>
-        <div class="container-fluid mb-3">
+        <div class="container-fluid mb-md-3">
             <div class="row">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
@@ -236,11 +237,12 @@
                                             <div
                                                 class="card-img-overlay d-flex flex-column justify-content-end align-items-center">
                                                 <div class="text-center mt-auto">
-                                                    <h5 class="card-title text-uppercase">
+                                                    <h5 class="card-title text-uppercase text-center">
                                                         <span>Miền tây trong ngày</span>
                                                         <span class="fw-normal">Chợ nổi cái bè</span>
                                                     </h5>
-                                                    <p class="card-text">Giá: <span class="fw-semibold">890.000
+                                                    <p class="card-text text-center">Giá: <span
+                                                            class="fw-semibold">890.000
                                                             VND</span></p>
                                                     <button type="button" class="btn btn-light">Đặt ngay</button>
                                                 </div>
@@ -262,7 +264,8 @@
                                                             Địa đạo Củ Chi
                                                         </span>
                                                     </h5>
-                                                    <p class="card-text">Giá: <span class="fw-semibold">450.000
+                                                    <p class="card-text text-center">Giá: <span
+                                                            class="fw-semibold">450.000
                                                             VND</span>
                                                     </p>
                                                     <button type="button" class="btn btn-light">Đặt ngay</button>
@@ -283,7 +286,8 @@
                                                         <span>Miền tây trong ngày</span>
                                                         <span class="fw-normal">Mỹ Tho - Bến Tre</span>
                                                     </h5>
-                                                    <p class="card-text">Giá: <span class="fw-semibold">450.000
+                                                    <p class="card-text text-center">Giá: <span
+                                                            class="fw-semibold">450.000
                                                             VND</span></p>
                                                     <button type="button" class="btn btn-light">Đặt ngay</button>
                                                 </div>
@@ -338,7 +342,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-lg-4 col-sm-12 col-md-12 mb-24">
+                                <div class="col-lg-4 col-sm-12 col-md-12">
                                     <a href="#" class="">
                                         <div class="card text-bg-dark h-100">
                                             <img src="/assets/img/img-10.jpg"
@@ -461,8 +465,8 @@
     </div> -->
     <div class="container">
         <h3 class="text-center mb-3 text-uppercase">Danh sách tour</h3>
-        <div class="row w-100">
-            <div class="col-lg-3 col-md-6 col-12 mb-sm-4 tour--item mb-24">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 mb-sm-4 tour--item mb-24 ">
                 <a href="#">
                     <div class="card text-bg-dark">
                         <img src="/assets/img/img-15.jpg" class="card-img" alt="...">
@@ -505,7 +509,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-6 col-12 mb-sm-4 tour--item mb-24">
+            <div class="col-lg-3 col-md-6 col-12 mb-sm-3 tour--item mb-24">
                 <a href="#">
                     <div class="card text-bg-dark">
                         <img src="/assets/img/img-18.jpg" class="card-img" alt="...">
@@ -522,10 +526,10 @@
         </div>
     </div>
     <!-- Blog -->
-    <div class="container">
+    <div class="container mb-5">
         <h3 class="text-center mb-3 text-uppercase">Blog</h3>
-        <div class="row mb-2">
-            <div class="col-lg-6 col-sm-12 col-md-12 mb-24 mb-md-3">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-12 mb-sm-4 mb-md-4 mb-24">
                 <a href="#">
                     <div class="card text-bg-dark box-img">
                         <img src="/assets/img/img-19.jpg" class="card-img opacity-50" alt="...">
@@ -547,10 +551,10 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-6 col-sm-12 col-md-12 mb-24 mb-md-3">
+            <div class="col-lg-6 col-sm-12 col-md-12 mb-sm-4 mb-md-4 mb-24">
                 <a href="#">
                     <div class="card text-bg-dark box-img">
-                        <img src="/assets/img/img-20.jpg" class="card-img opacity-50 box-img-hover" alt=" ...">
+                        <img src="/assets/img/img-20.jpg" class="card-img opacity-50" alt=" ...">
                         <div class="card-img-overlay d-flex flex-column justify-content-end">
                             <div class="text-center mt-auto">
                                 <h5 class="card-title text-uppercase">Đặc sản miền tây
@@ -569,14 +573,18 @@
             </div>
             </a>
         </div>
-        <div class="row mb-4">
-            <div class="col-4">
+        <div class="row mb-lg-4">
+            <div class="col-lg-4 col-sm-12 col-md-12 mb-24">
                 <div class="card">
-                    <img src="/assets/img/img-1.jpg" class="card-img-top" alt="...">
+                    <a href="#" class="box-img">
+                        <img src="/assets/img/img-blog-1.jpg" class="card-img-top" alt="...">
+                    </a>
                     <div class="card-body text-center">
-                        <h5 class="card-text text-center" style="font-size: 16px;">
-                            TOP 8 LÀNG HOA MIỀN TÂY TUYỆT ĐẸP KHÔNG THỂ BỎ QUA VÀO DỊP TẾT
-                        </h5>
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="card-text text-center text-black blog-title mb-2" style="font-size: 16px;">
+                                TOP 8 LÀNG HOA MIỀN TÂY TUYỆT ĐẸP KHÔNG THỂ BỎ QUA VÀO DỊP TẾT
+                            </h5>
+                        </a>
                         <p class="card-text">Những ngày Tết đang đến gần, muôn hoa đang đua nhau khoe sắc rộn ràng, các
                             làng hoa ở Miền
                             Tây vào vụ thu hoạch. Đây là thời điểm thích hợp nhất để khách du lịch Miền Tây có thể chiêm
@@ -588,36 +596,38 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-12 col-md-12 mb-24">
                 <div class="card">
-                    <img src="/assets/img/img-1.jpg" class="card-img-top" alt="...">
+                    <a href="#" class="box-img"><img src="/assets/img/img-blog-2.jpg" class="card-img-top"
+                            alt="..."></a>
                     <div class="card-body text-center">
-                        <h5 class="card-text text-center" style="font-size: 16px;">
-                            TOP 8 LÀNG HOA MIỀN TÂY TUYỆT ĐẸP KHÔNG THỂ BỎ QUA VÀO DỊP TẾT
-                        </h5>
-                        <p class="card-text">Những ngày Tết đang đến gần, muôn hoa đang đua nhau khoe sắc rộn ràng, các
-                            làng hoa ở Miền
-                            Tây vào vụ thu hoạch. Đây là thời điểm thích hợp nhất để khách du lịch Miền Tây có thể chiêm
-                            ngưỡng vẻ đẹp rực rỡ của những vườn hoa trong ngày xuân. Hãy cùng Thám Hiểm MeKong ghé thăm
-                            và đắm chìm trong sắc hoa ở các làng hoa Miền Tây nổi tiếng sau nhé.
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="card-text text-center text-black blog-title mb-2" style="font-size: 16px;">
+                                [REVIEW] KINH NGHIỆM DU LỊCH BẾN TRE 1 NGÀY CHI TIẾT TỪ A TỚI Z
+                            </h5>
+                        </a>
+                        <p class="card-text">Bến Tre là điểm du lịch thu hút du khách bởi không khí trong lành, cùng
+                            cảnh khung cảnh thanh bình với những hàng dừa xanh mát ngút ngàn. Qua bài viết dưới đây Tour
+                            Bốn Phương sẽ chia sẻ đến bạn những kinh nghiệm du lịch bến tre 1 ngày bổ ích.
                         </p>
                         <button type="button" class="btn btn-primary text-white my-auto">Đọc
                             thêm</button>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-12 col-md-12 mb-24">
                 <div class="card">
-                    <img src="/assets/img/img-1.jpg" class="card-img-top" alt="...">
+                    <a href="#" class="box-img"><img src="/assets/img/img-blog-3.jpg" class="card-img-top"
+                            alt="..."></a>
                     <div class="card-body text-center">
-                        <h5 class="card-text text-center" style="font-size: 16px;">
-                            TOP 8 LÀNG HOA MIỀN TÂY TUYỆT ĐẸP KHÔNG THỂ BỎ QUA VÀO DỊP TẾT
-                        </h5>
-                        <p class="card-text">Những ngày Tết đang đến gần, muôn hoa đang đua nhau khoe sắc rộn ràng, các
-                            làng hoa ở Miền
-                            Tây vào vụ thu hoạch. Đây là thời điểm thích hợp nhất để khách du lịch Miền Tây có thể chiêm
-                            ngưỡng vẻ đẹp rực rỡ của những vườn hoa trong ngày xuân. Hãy cùng Thám Hiểm MeKong ghé thăm
-                            và đắm chìm trong sắc hoa ở các làng hoa Miền Tây nổi tiếng sau nhé.
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="card-text text-center text-black blog-title mb-2" style="font-size: 16px;">
+                                SÀI GÒN CÓ GÌ VUI? TOP 14 ĐỊA ĐIỂM DU LỊCH SÀI GÒN KHÔNG THỂ BỎ QUA
+                            </h5>
+                        </a>
+                        <p class="card-text">Bạn đang có ý định du lịch Sài Gòn nhưng vẫn chưa biết Sài Gòn có gì vui?
+                            Hãy cùng Tour Bốn Phương khám phá các địa điểm vui chơi ở Sài Gòn qua bài viết dưới đây, đảm
+                            bảo bạn sẽ có những trải nghiệm thú vị trong chuyến du lịch sắp tới.
                         </p>
                         <button type="button" class="btn btn-primary text-white my-auto">Đọc
                             thêm</button>
@@ -626,54 +636,64 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-12 col-md-12 mb-24">
                 <div class="card">
-                    <img src="/assets/img/img-1.jpg" class="card-img-top" alt="...">
+                    <a href="#" class="box-img">
+                        <img src="/assets/img/img-blog-4.jpg" class="card-img-top" alt="...">
+                    </a>
                     <div class="card-body text-center">
-                        <h5 class="card-text text-center" style="font-size: 16px;">
-                            TOP 8 LÀNG HOA MIỀN TÂY TUYỆT ĐẸP KHÔNG THỂ BỎ QUA VÀO DỊP TẾT
-                        </h5>
-                        <p class="card-text">Những ngày Tết đang đến gần, muôn hoa đang đua nhau khoe sắc rộn ràng, các
-                            làng hoa ở Miền
-                            Tây vào vụ thu hoạch. Đây là thời điểm thích hợp nhất để khách du lịch Miền Tây có thể chiêm
-                            ngưỡng vẻ đẹp rực rỡ của những vườn hoa trong ngày xuân. Hãy cùng Thám Hiểm MeKong ghé thăm
-                            và đắm chìm trong sắc hoa ở các làng hoa Miền Tây nổi tiếng sau nhé.
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="card-text text-center text-black blog-title mb-2" style="font-size: 16px;">
+                                ĐI ĐÂU Ở SÓC TRĂNG? TOP 9 ĐỊA ĐIỂM DU LỊCH Ở SÓC TRĂNG
+                            </h5>
+                        </a>
+                        <p class="card-text">Với đặc trưng về sự đa dạng văn hóa dân tộc, Sóc Trăng là điểm đến lý tưởng
+                            cho những du khách thích tìm hiểu về văn hóa và lịch sử của miền Nam. Qua bài viết dưới đây,
+                            Tour Bốn Phương sẽ chia sẻ đến bạn những địa điểm du lịch ở Sóc Trăng mà bạn không thể bỏ
+                            qua khi có dịp du lịch nơi đây
                         </p>
                         <button type="button" class="btn btn-primary text-white my-auto">Đọc
                             thêm</button>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-12 col-md-12 mb-24">
                 <div class="card">
-                    <img src="/assets/img/img-1.jpg" class="card-img-top" alt="...">
+                    <a href="#" class="box-img">
+                        <img src="/assets/img/img-blog-5.jpg" class="card-img-top" alt="...">
+                    </a>
                     <div class="card-body text-center">
-                        <h5 class="card-text text-center" style="font-size: 16px;">
-                            TOP 8 LÀNG HOA MIỀN TÂY TUYỆT ĐẸP KHÔNG THỂ BỎ QUA VÀO DỊP TẾT
-                        </h5>
-                        <p class="card-text">Những ngày Tết đang đến gần, muôn hoa đang đua nhau khoe sắc rộn ràng, các
-                            làng hoa ở Miền
-                            Tây vào vụ thu hoạch. Đây là thời điểm thích hợp nhất để khách du lịch Miền Tây có thể chiêm
-                            ngưỡng vẻ đẹp rực rỡ của những vườn hoa trong ngày xuân. Hãy cùng Thám Hiểm MeKong ghé thăm
-                            và đắm chìm trong sắc hoa ở các làng hoa Miền Tây nổi tiếng sau nhé.
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="card-text text-center text-black text-uppercase blog-title mb-2"
+                                style="font-size: 16px;">
+                                Top 9 món ngon từ đặc sản đuông dừa miền Tây không thể bỏ qua
+                            </h5>
+                        </a>
+                        <p class="card-text">Miền Tây từ lâu đã nổi tiếng bởi nền ẩm thực phong phú với những món đặc
+                            sản độc lạ. Đặc biệt là đặc sản đuông dừa - món ăn thử thách sự can đảm của thực khách khi
+                            du lịch miền Tây. Hãy cùng Tour Bốn Phương khám phá những món ngon được chế biến từ món đặc
+                            sản độc đáo này nhé!
                         </p>
                         <button type="button" class="btn btn-primary text-white my-auto">Đọc
                             thêm</button>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-12 col-md-12 mb-24">
                 <div class="card">
-                    <img src="/assets/img/img-1.jpg" class="card-img-top" alt="...">
+                    <a href="#" class="box-img">
+                        <img src="/assets/img/img-blog-6.jpg" class="card-img-top" alt="...">
+                    </a>
                     <div class="card-body text-center">
-                        <h5 class="card-text text-center" style="font-size: 16px;">
-                            TOP 8 LÀNG HOA MIỀN TÂY TUYỆT ĐẸP KHÔNG THỂ BỎ QUA VÀO DỊP TẾT
-                        </h5>
-                        <p class="card-text">Những ngày Tết đang đến gần, muôn hoa đang đua nhau khoe sắc rộn ràng, các
-                            làng hoa ở Miền
-                            Tây vào vụ thu hoạch. Đây là thời điểm thích hợp nhất để khách du lịch Miền Tây có thể chiêm
-                            ngưỡng vẻ đẹp rực rỡ của những vườn hoa trong ngày xuân. Hãy cùng Thám Hiểm MeKong ghé thăm
-                            và đắm chìm trong sắc hoa ở các làng hoa Miền Tây nổi tiếng sau nhé.
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="card-text text-center text-black text-uppercase blog-title mb-2"
+                                style="font-size: 16px;">
+                                Đi đâu chơi ở Tiền Giang? Top 10+ địa điểm hot nhất ở Tiền Giang
+                            </h5>
+                        </a>
+                        <p class="card-text">Đi đâu chơi ở Tiền Giang là câu hỏi luôn được nhiều du khách thắc mắc, đang
+                            tìm kiếm. Hãy cùng Tour Bốn Phương khám phá ngay top 10+ điểm đến hấp dẫn nhất Tiền Giang
+                            ngay nào!
                         </p>
                         <button type="button" class="btn btn-primary text-white my-auto">Đọc
                             thêm</button>
@@ -682,8 +702,109 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="#">
+                    <img src="/assets/img/img-logo.png" alt="" class="w-50 mb-3">
+                </a>
+                <h5 class="text-uppercase">CÔNG TY TNHH DU LỊCH QUỐC TẾ BỐN PHƯƠNG</h5>
+                <div class="footer-info">
+                    <h5 class="text-uppercase" style="font-size: 14px;">THÔNG TIN CHUYỂN KHOẢN</h5>
+                    <p style="text-align: justify; font-size: 14px;">1. Chủ tài khoản:
+                        <span class="fw-semibold">Dương Minh Bình</span>
+                        | STK: <span class="fw-semibold">100878121168</span>
+                        | Ngân hàng Thương mại Cổ Phần Công Thương Việt Nam (VietinBank) - Chi nhánh Tên Lửa
+                    </p>
+                </div>
+                <div class="footer-info">
+                    <p style="text-align: justify; font-size: 14px;">2. Chủ tài khoản:
+                        <span class="fw-semibold">Công ty TNHH Du Lịch Quốc Tế Bốn Phương</span>
+                        | STK: <span class="fw-semibold">100878121168</span>
+                        | Ngân hàng Thương mại Cổ Phần Công Thương Việt Nam (VietinBank) - Chi nhánh Tên Lửa
+                        (Khi quý khách có nhu cầu xuất hóa đơn)
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h5 class="text-uppercase">Thông tin liên hệ</h5>
+                <div class="footer-info">
+                    <div style="text-align: justify; font-size: 14px;">
+                        <p> <span class="fw-semibold"><i class="fa-solid fa-location-dot me-2"></i>Địa chỉ:</span> 124
+                            Bình Trị Đông, P. Bình Trị Đông, Quận Bình Tân,
+                            TP.HCM </p>
+                        <p> <span class="fw-semibold"><i class="fa-solid fa-phone me-2"></i>Điện thoại:</span>
+                            0385193525
+                        </p>
+                        <p> <span class="fw-semibold"><i class="fa-solid fa-envelope me-2"></i>Email:</span>
+                            <a href="#" class="text-decoration-none">binhdmps32770@fpt.edu.vn</a>
+                        </p>
+                        <p> <span class="fw-semibold"><i class="fa-brands fa-facebook me-2"></i>Facebook:</span>
+                            <a href="#" class="text-decoration-none">https://web.facebook.com/hmm.binhhaykhocnhe/</a>
+                        </p>
+                        <p> <span class="fw-semibold"><i class="fa-brands fa-github me-2"></i>Github:</span>
+                            <a href="#" class="text-decoration-none">https://github.com/BinhHayKhocNhe</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+                <h5 class="text-uppercase">Giới thiệu</h5>
+                <ul class="ps-0 color-footer" style="list-style: none;">
+                    <li class="mb-1"><a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-chevron-right me-1"></i>Về chúng tôi</a>
+                    </li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-chevron-right me-1"></i>Hướng dẫn thanh toán</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none"><i
+                                class="fa-solid fa-chevron-right me-1"></i>Hướng dẫn
+                            đặt tour</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none"><i
+                                class="fa-solid fa-chevron-right me-1"></i>Bảng
+                            giá</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none"><i
+                                class="fa-solid fa-chevron-right me-1"></i>Tour
+                            khuyến mãi</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+                <h5 class="text-uppercase">Chính sách</h5>
+                <ul class="ps-0 color-footer" style="list-style: none;">
+                    <li class="mb-1"><a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-chevron-right me-1"></i>Chính sách bảo mật</a>
+                    </li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-chevron-right me-1"></i>Điều khoản chung</a></li>
+                </ul>
+                <a href="#"><img src="/assets/img/img-chinh-sach.png" alt="" class="w-75"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid border-top">
+        <div class="text-center mt-3 mb-3" style="font-size: 14px;">
+            <p>GIẤY PHÉP KINH DOANH SỐ: 0313049973 do Sở Kế hoạch đầu tư TP HCM cấp.
+                <br>
+                Copyright © 2020 <span class="fw-semibold">Tour Bốn Phương.</span> All rights reserved.
+            </p>
+        </div>
     </div>
     <script src="/assets/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var header = document.getElementById("header");
 
+        window.addEventListener("scroll", function () {
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) { // Thay đổi giá trị 100 nếu bạn muốn header trở thành fixed ở vị trí cuộn khác
+                header.classList.add("fixed-header");
+                header.classList.add("fixed-header a");
+                header.classList.add("fixed-header ul");
+            } else {
+                header.classList.remove("fixed-header");
+            }
+        });
+    });
+</script>
 </html>
