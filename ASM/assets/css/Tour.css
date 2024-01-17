@@ -85,6 +85,16 @@ header {
 .box-img:hover img {
     transform: scale(1.1) rotate(1.5deg);
 }
+
+
+.color-footer a {
+    color: rgb(50, 47, 47);
+    font-size: 14px;
+}
+
+.color-footer a:hover {
+    color: rgb(206, 85, 85);
+}
 @media (width: 1024px) {
     .flexcolumn {
         flex-direction: row;
