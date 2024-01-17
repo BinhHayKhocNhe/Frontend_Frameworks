@@ -50,12 +50,6 @@ section {
 .pad-top {
     padding-top: calc(109.6px + 24px);
 }
-
-.tab-content-header{
-    color: var(--color-cart);
-    text-transform: uppercase;
-}
-
 .color-footer a {
     color: rgb(50, 47, 47);
     font-size: 14px;
@@ -64,8 +58,6 @@ section {
 .color-footer a:hover {
     color: rgb(206, 85, 85);
 }
-
-
 @media (width: 1024px) {
     .flexcolumn {
         flex-direction: row;
@@ -101,6 +93,10 @@ section {
 
     .filter,
     .container-hotline {
+        display: none;
+    }
+
+    .btn-none {
         display: none;
     }
 }

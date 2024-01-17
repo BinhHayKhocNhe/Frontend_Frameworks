@@ -51,9 +51,8 @@ section {
     padding-top: calc(109.6px + 24px);
 }
 
-.tab-content-header{
-    color: var(--color-cart);
-    text-transform: uppercase;
+.td-hover:hover {
+    color: var(--color-cart) !important;
 }
 
 .color-footer a {
@@ -64,7 +63,6 @@ section {
 .color-footer a:hover {
     color: rgb(206, 85, 85);
 }
-
 
 @media (width: 1024px) {
     .flexcolumn {
@@ -101,6 +99,10 @@ section {
 
     .filter,
     .container-hotline {
+        display: none;
+    }
+
+    .btn-none {
         display: none;
     }
 }
