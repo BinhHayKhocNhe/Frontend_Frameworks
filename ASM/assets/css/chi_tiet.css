@@ -1,0 +1,135 @@
+:root {
+    --color-header-card: #005294;
+    --color-aside: #ffb13e;
+    --color-cart: #2195c3;
+}
+
+body {
+    background-color: #fff;
+}
+
+header,
+section {
+    background-color: #f9f9f9;
+}
+
+.header-items img {
+    max-width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header-contact {
+    overflow: hidden;
+}
+
+.header-contact li {
+    background-color: aliceblue;
+}
+
+.header-contact>li>a:hover {
+    background: rgb(202 201 201 / 40%);
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+    color: #000;
+}
+
+.header-contact>li>a:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header-nav-menu a:hover {
+    background: rgb(202 201 201 / 40%);
+}
+
+.card-header {
+    background-color: var(--color-header-card);
+}
+
+.pad-top {
+    padding-top: calc(109.6px + 24px);
+}
+
+.tab-content-header{
+    color: var(--color-cart);
+    text-transform: uppercase;
+}
+
+
+
+@media (width: 1024px) {
+    .flexcolumn {
+        flex-direction: row;
+    }
+
+    .container-hotline,
+    .img-none {
+        display: none;
+    }
+}
+
+@media(max-width:1024px) {
+    .btn-header-contact {
+        display: none !important;
+    }
+
+    .flex__column {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .width-option {
+        width: 100% !important;
+    }
+
+    .mb-24 {
+        margin-bottom: 24px;
+    }
+
+    .pad-top {
+        padding-top: calc(109.6px - 28px);
+    }
+
+    .filter,
+    .container-hotline {
+        display: none;
+    }
+}
+
+@media (max-width: 812px) {
+    .header-phone {
+        margin-right: 20px;
+    }
+
+    .btn-header-contact {
+        display: none;
+    }
+
+    .flexcolumn {
+        flex-direction: column;
+    }
+
+    .container-hotline,
+    .img-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-logo {
+        display: none;
+    }
+
+    .mb-24 {
+        margin-bottom: 24px;
+    }
+
+    .mb-12 {
+        margin-bottom: 12px;
+    }
+
+    section {
+        background-color: #fff !important;
+    }
+}
