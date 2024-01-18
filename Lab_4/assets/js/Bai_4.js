@@ -9,4 +9,5 @@ var app = angular.module("myApp", []).controller("calc", function ($scope) {
         $scope.dienTich = a * b;
         $scope.chuVi = (a + b) * 2;
     }
+    
 });
