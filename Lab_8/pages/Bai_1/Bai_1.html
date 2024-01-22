@@ -40,12 +40,10 @@
             </div>
         </div>
     </nav>
-
-    <section class="container mt-4" style="height: 450px;">
-        <div class="ng-view">
-            
-        </div>
-    </section>
+    <article class="container mt-4" style="height: 450px;">
+        <div ng-show="loading" class="label label-info">Loading...</div>
+        <div class="ng-view"></div>
+    </article>
     <footer class="container-fluid bg-secondary" style="height: 100px;">
         <div class="container d-flex align-items-center justify-content-center h-100">
             PS32770 - Dương Minh Bình - FPT Poly HCM
