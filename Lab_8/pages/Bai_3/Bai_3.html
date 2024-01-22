@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <header class="container-fluid bg-secondary" style="height: 100px;" ng-include="'Header.html'"></header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" ng-include="'menu.html'"></nav>
+    <article class="container mt-4" style="height: 450px;">
+        <div ng-show="loading" class="label label-info">Loading...</div>
+        <div class="ng-view"></div>
+    </article>
+    <footer class="container-fluid bg-secondary" style="height: 100px;" ng-include="'Footer.html'"></footer>
+
+    <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/angular-1.8.2/angular.min.js"></script>
+    <script src="/assets/angular-1.8.2/angular-route.min.js"></script>
+    <script src="/assets/js/webapp.js"></script>
+</body>
+</html>
