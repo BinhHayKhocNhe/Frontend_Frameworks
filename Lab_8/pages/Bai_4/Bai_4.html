@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+</head>
+
+<body ng-app="myApp">
+    <header ng-include="'header.html'"></header>
+    <nav class="container-fluid nav-background mb-4"  ng-include="'menu.html'"></nav>
+    <div class="container mb-4 text-size">
+        <div class="row">
+            <article class="col-md-9 col-12">
+                <div ng-show="loading" class="label label-info">Loading...</div>
+                <div class="ng-view"></div>
+            </article>
+            <aside class="col-md-3 col-12">
+                <div class="card mb-4 col-12" ng-include="'cart.html'"></div>
+                <div class="card mb-4 col-12" ng-include="'Search.html'"></div>
+                <div class="card col-12">
+                    <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                            <div ng-include="'Category.html'"></div>
+                            <div ng-include="'Supplier.html'"></div>
+                            <div ng-include="'Special.html'"></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer class="container-fluid" ng-include="'footer.html'"></footer>
+    <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/angular-1.8.2/angular.min.js"></script>
+    <script src="/assets/angular-1.8.2/angular-route.min.js"></script>
+    <script src="/assets/js/Bai_2.js"></script>
+    <script src="/assets/js/category-ctrl.js"></script>
+    <script src="/assets/js/special-ctrl.js"></script>
+    <script src="/assets/js/supplier-ctrl.js"></script>
+</body>
+
+</html>
