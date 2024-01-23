@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/assets/img/background.jpg');
+    background-size: cover;
+    /* Đảm bảo hình nền kích thước để phủ toàn bộ phần thân */
+    background-position: center;
+    /* Đặt vị trí hình nền ở giữa */
+    background-repeat: no-repeat;
+    /* Không lặp lại hình nền */
+    background-attachment: fixed;
+    /* Giữ hình nền cố định khi trang cuộn */
+}
+
+.size-box {
+    width: 950px;
+}
+
+.left-box {
+    background-image: url('/assets/img/img-login.jpg');
+    background-size: cover;
+    /* Đảm bảo hình nền kích thước để phủ toàn bộ phần thân */
+    background-position: center;
+    /* Đặt vị trí hình nền ở giữa */
+    background-repeat: no-repeat;
+    /* Không lặp lại hình nền */
+}
+
+small {
+    width: 17rem;
+}
+
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+.img-google {
+    width: 22px;
+}
+
+@media only screen and (max-width:768px) {
+    .size-box {
+        margin: 0 10px;
+    }
+}
+
+.input-pass {
+    border-top-right-radius: 7px !important;
+    border-bottom-right-radius: 7px !important;
+}
+
+.btn-eye {
+    right: 12px;
+    height: 100%;
+    color: #212529;
+    border: none;
+}
