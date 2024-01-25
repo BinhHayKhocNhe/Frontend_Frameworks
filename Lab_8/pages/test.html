@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="myController">
+        <label for="myDropdown">Chọn một mục:</label>
+        <select id="myDropdown" ng-model="selectedItem" ng-options="item for item in data">
+        </select>
+    </div>
+
+    <script src="/assets/angular-1.8.2/angular.min.js"></script>
+    <script>
+        angular.module('myApp', []).controller('myController', function ($scope) {
+            $scope.data=[];
+            for (let index = 0; index < 20; index++) {
+                $scope.data.push('Item ' + (index + 1));
+            }
+            $scope.data.push('Khác');
+            $scope.selectedItem = $scope.data[0];
+        });
+    </script>
+</body>
+
+</html>

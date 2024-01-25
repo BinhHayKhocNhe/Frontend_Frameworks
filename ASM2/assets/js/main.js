@@ -26,6 +26,7 @@ app.config(function ($routeProvider) {
             controller: "cart"
         })
         .otherwise({
-            redirectTo: "/home"
+            redirectTo: "/home",
+            templateUrl: "home.html"
         });
 });
