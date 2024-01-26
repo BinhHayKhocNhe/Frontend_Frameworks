@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+</head>
+
+<body ng-app="myApp">
+    <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+        <form class="w-50" ng-controller="myCtrl1">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Họ và tên</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    ng-model="student.fullName">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Ngày sinh</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" ng-model="student.birthday">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Điểm</label>
+                <input type="number" class="form-control" id="exampleInputPassword1" ng-model="student.mark">
+            </div>
+            <button class="btn btn-primary" ng-click="save()">Lưu</button>
+            <button class="btn btn-secondary" ng-click="cancel()">Hủy</button>
+        </form>
+        <table class="table w-50 table-hover table-bordered text-center" ng-controller="myCtrl2">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Họ và tên</th>
+                    <th scope="col">Ngày sinh</th>
+                    <th scope="col">Điểm</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="student in students">
+                    <th scope="row" ng-bind="$index+1"></th>
+                    <td ng-bind="student.fullName"></td>
+                    <td ng-bind="student.birthday"></td>
+                    <td ng-bind="student.mark"></td>
+                    <td><a href="#" ng-click="edit($index)">Sửa</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/angular-1.8.2/angular.min.js"></script>
+    <script src="/assets/angular-1.8.2/angular-route.min.js"></script>
+    <script src="/assets/js/Bai_2.js"></script>
+</body>
+
+</html>
