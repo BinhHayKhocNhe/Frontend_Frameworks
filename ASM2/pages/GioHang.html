@@ -33,115 +33,32 @@
                             <th scope="col">Hành động</th>
                         </tr>
                     </thead>
-                    <tbody class="text-center align-middle">
+                    <tbody class="text-center align-middle" ng-repeat="p in cart">
                         <tr>
-                            <td>T001</td>
-                            <td class=""><a href="#" class="text-black text-decoration-none td-hover">Tour miền tây 1
-                                    ngày</a></td>
+                            <td>{{p.id}}</td>
+                            <td class=""><a href="#" class="text-black text-decoration-none td-hover">{{p.tilte}}</a>
+                            </td>
                             <td>Hằng ngày</td>
                             <td>
                                 <div class="input-group w-100">
                                     <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-minus-btn">-</button>
+                                        id="quantity-minus-btn" ng-click="decreaseQuantity(p)">-</button>
                                     <input type="number" class="form-control" aria-label="Quantity"
-                                        aria-describedby="quantity-minus-btn" placeholder="1">
+                                        aria-describedby="quantity-minus-btn" placeholder="1" min="1"
+                                        ng-model="p.quantity">
                                     <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-plus-btn">+</button>
+                                        id="quantity-plus-btn" ng-click="increaseQuantity(p)">+</button>
                                 </div>
                             </td>
-                            <td>450.000 VND</td>
-                            <td><button type="button" class="btn btn-warning">Thanh toán</button></td>
-                        </tr>
-                        <tr>
-                            <td>T002</td>
-                            <td class=""><a href="#" class="text-black text-decoration-none td-hover">Tour miền tây 2
-                                    ngày 1 đêm</a></td>
-                            <td>Hằng ngày</td>
+                            <td>{{p.price*p.quantity | number}} VND</td>
                             <td>
-                                <div class="input-group w-100">
-                                    <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-minus-btn">-</button>
-                                    <input type="number" class="form-control" aria-label="Quantity"
-                                        aria-describedby="quantity-minus-btn" placeholder="1">
-                                    <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-plus-btn">+</button>
-                                </div>
+                                <a href="" class="text-decoration-none me-2"
+                                    style="color: red; user-select: none;">Thanh toán</a>
+                                <a href="" class="text-decoration-none text-secondary" style="user-select: none;"
+                                    ng-click="deleteCart($index)">Xóa</a>
                             </td>
-                            <td>1.550.000 VND</td>
-                            <td><button type="button" class="btn btn-warning">Thanh toán</button></td>
                         </tr>
-                        <tr>
-                            <td>T003</td>
-                            <td class=""><a href="#" class="text-black text-decoration-none td-hover">Tour miền tây 3
-                                    ngày 2 đêm</a></td>
-                            <td>Hằng ngày</td>
-                            <td>
-                                <div class="input-group w-100">
-                                    <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-minus-btn">-</button>
-                                    <input type="number" class="form-control" aria-label="Quantity"
-                                        aria-describedby="quantity-minus-btn" placeholder="1">
-                                    <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-plus-btn">+</button>
-                                </div>
-                            </td>
-                            <td>2.890.000 VND</td>
-                            <td><button type="button" class="btn btn-warning">Thanh toán</button></td>
-                        </tr>
-                        <tr>
-                            <td>T004</td>
-                            <td class=""><a href="#" class="text-black text-decoration-none td-hover">Tour miền tây 3
-                                    ngày 2 đêm</a></td>
-                            <td>Hằng ngày</td>
-                            <td>
-                                <div class="input-group w-100">
-                                    <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-minus-btn">-</button>
-                                    <input type="number" class="form-control" aria-label="Quantity"
-                                        aria-describedby="quantity-minus-btn" placeholder="1">
-                                    <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-plus-btn">+</button>
-                                </div>
-                            </td>
-                            <td>2.890.000 VND</td>
-                            <td><button type="button" class="btn btn-warning">Thanh toán</button></td>
-                        </tr>
-                        <tr>
-                            <td>T005</td>
-                            <td class=""><a href="#" class="text-black text-decoration-none td-hover">Tour miền tây 3
-                                    ngày 2 đêm</a></td>
-                            <td>Hằng ngày</td>
-                            <td>
-                                <div class="input-group w-100">
-                                    <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-minus-btn">-</button>
-                                    <input type="number" class="form-control" aria-label="Quantity"
-                                        aria-describedby="quantity-minus-btn" placeholder="1">
-                                    <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-plus-btn">+</button>
-                                </div>
-                            </td>
-                            <td>2.890.000 VND</td>
-                            <td><button type="button" class="btn btn-warning">Thanh toán</button></td>
-                        </tr>
-                        <tr>
-                            <td>T006</td>
-                            <td class=""><a href="#" class="text-black text-decoration-none td-hover">Tour miền tây 3
-                                    ngày 2 đêm</a></td>
-                            <td>Hằng ngày</td>
-                            <td>
-                                <div class="input-group w-100">
-                                    <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-minus-btn">-</button>
-                                    <input type="number" class="form-control" aria-label="Quantity"
-                                        aria-describedby="quantity-minus-btn" placeholder="1">
-                                    <button class="btn btn-outline-secondary btn-sm btn-none" type="button"
-                                        id="quantity-plus-btn">+</button>
-                                </div>
-                            </td>
-                            <td>2.890.000 VND</td>
-                            <td><button type="button" class="btn btn-warning">Thanh toán</button></td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -152,9 +69,11 @@
                         Khuyến mãi đặc biệt
                     </div>
                     <div class="card-body" style="text-align: justify;">
-                        <p class="card-text mb-2 fw-medium">- Giảm 20%, tối đa <span class="text-danger fw-semibold">500.000
+                        <p class="card-text mb-2 fw-medium">- Giảm 20%, tối đa <span
+                                class="text-danger fw-semibold">500.000
                                 VND</span> khi đi tour trên 10 ngày.</p>
-                        <p class="card-text fw-medium">- Giảm ngay 10% tối đa <span class="text-danger fw-semibold">300.000
+                        <p class="card-text fw-medium">- Giảm ngay 10% tối đa <span
+                                class="text-danger fw-semibold">300.000
                                 VND</span> khi đi tour trên 7 ngày.</p>
                     </div>
                 </div>

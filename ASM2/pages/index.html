@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/Tour.css">
 </head>
 
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="TourController">
     <div ng-include="'Header.html'"></div>
     <div id="carouselExampleCaptions" class="carousel slide pad-top">
         <div class="carousel-indicators">
@@ -97,11 +98,11 @@
     </div>
     <div ng-view></div>
     <div ng-include="'Footer.html'"></div>
-    <script src="/assets/js/Buy_Tour.js"></script>
     <script src="/assets/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/angular-1.8.2/angular.min.js"></script>
     <script src="/assets/angular-1.8.2/angular-route.js"></script>
     <script src="/assets/js/main.js"></script>
+    <!-- <script src="/assets/js/Buy_Tour.js"></script> -->
 </body>
 
 </html>

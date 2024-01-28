@@ -1,0 +1,224 @@
+[
+    {
+        "id": "TU001",
+        "tilte": "Tour miền tây trong ngày",
+        "price": 450000,
+        "img": "/assets/img/img-12.jpg",
+        "eye": 18301,
+        "cmt": 1510,
+        "cart": 452,
+        "address": "Mỹ Tho - Bến Tre",
+        "hotel": "Bốn Phương",
+        "children_price": 375000
+    },
+    {
+        "id": "TU002",
+        "tilte": "Tour miền tây 2 ngày 1 đêm",
+        "price": 1500000,
+        "img": "/assets/img/img-cart-1.png",
+        "eye": 8710,
+        "cmt": 4502,
+        "cart": 784,
+        "address": "Tiền Giang - Bến Tre",
+        "hotel": "Miền Tây Hotel",
+        "children_price": 1250000
+    },
+    {
+        "id": "TU003",
+        "tilte": "TOUR 3 NGÀY 2 ĐÊM: CẦN THƠ - ĐẤT MŨI CÀ MAU",
+        "price": 2890000,
+        "img": "/assets/img/img-cart-2.jpg",
+        "eye": 1256,
+        "cmt": 450,
+        "cart": 140,
+        "address": "Cần Thơ - Cà Mau",
+        "hotel": "Cô Hai",
+        "children_price": 2500000
+    },
+    {
+        "id": "TU004",
+        "tilte": "TOUR MIỀN TÂY 3 NGÀY 2 ĐÊM",
+        "price": 3080000,
+        "img": "/assets/img/img-cart-3.jpg",
+        "eye": 870,
+        "cmt": 150,
+        "cart": 40,
+        "address": "Tiền Giang - Bến Tre - Trà Vinh",
+        "hotel": "Việt Đức",
+        "children_price": 2080000
+    },
+    {
+        "id": "TU005",
+        "tilte": "TOUR 4 NGÀY 3 ĐÊM: SA ĐÉC - CẦN THƠ - CÀ MAU",
+        "price": 4180000,
+        "img": "/assets/img/img-cart-4.jpg",
+        "eye": 4780,
+        "cmt": 360,
+        "cart": 180,
+        "address": "Sa Đéc - Cần Thơ - Cà Mau",
+        "hotel": "Bà Vân",
+        "children_price": 3900000
+    },
+    {
+        "id": "TU006",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Sa Đéc - Cần Thơ - Cà Mau",
+        "hotel": "Long Hải",
+        "children_price": 1290000
+    },
+    {
+        "id": "TU007",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU008",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU009",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU010",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU011",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU012",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU013",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU014",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU015",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU016",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU017",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU018",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU019",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU020",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    },
+    {
+        "id": "TU0021",
+        "tilte": "TOUR 2 NGÀY 1 ĐÊM: CÁI BÈ - CÙ LAO TÂN PHONG",
+        "price": 1550000,
+        "img": "/assets/img/img-cart-5.jpg",
+        "eye": 7840,
+        "cmt": 98,
+        "cart": 150,
+        "address": "Cần Thơ"
+    }
+]

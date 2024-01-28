@@ -1,241 +1,208 @@
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết tour</title>
-    <link rel="stylesheet" href="/assets/css/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/fontawesome-free-6.5.1-web/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="/assets/css/chi_tiet.css">
-</head>
-
-<body>
-    <section class="container-fluid mb-3 p-4">
-        <div class="container d-flex align-items-center">
-            <a href="#" class="text-decoration-none me-2">Trang chủ</a>
-            <span class="me-2"><i class="fa-solid fa-chevron-right"></i></span>
-            <a href="#" class="text-decoration-none me-2">Tour</a>
-            <span><i class="fa-solid fa-chevron-right me-2"></i></span>
-            <a href="#" class="text-decoration-none me-2">Miền Tây</a>
-            <span><i class="fa-solid fa-chevron-right me-2"></i></span>
-            <a href="#" class="text-decoration-none text-uppercase">Tour miền tây trong ngày</a>
-        </div>
-    </section>
-    <div class="container mb-3">
-        <a href="#" class="text-decoration-none">
-            <h5 class="text-uppercase mb-3">Tour miền tây</h5>
-        </a>
-        <div class="mb-3">Giá tour gốc/khách: <span class="fw-semibold fs-5" style="color: #fb752e;">450.000VND</span>
-        </div>
-        <button type="button" class="btn btn-warning rounded-pill">Đặt ngay</button>
+<section class="container-fluid mb-3 p-4">
+    <div class="container d-flex align-items-center">
+        <a href="#" class="text-decoration-none me-2">Trang chủ</a>
+        <span class="me-2"><i class="fa-solid fa-chevron-right"></i></span>
+        <a href="#" class="text-decoration-none me-2">Tour</a>
+        <span><i class="fa-solid fa-chevron-right me-2"></i></span>
+        <a href="#" class="text-decoration-none me-2">Miền Tây</a>
+        <span><i class="fa-solid fa-chevron-right me-2"></i></span>
+        <a href="#" class="text-decoration-none text-uppercase">{{products[index].tilte}}</a>
     </div>
-    <article class="container">
-        <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Chương trình tour</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Bảng giá</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
-                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Thông tin</button>
-            </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active mt-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
-                tabindex="0">
-                <a href="#" class="text-decoration-none">
-                    <h5 class="text-uppercase mb-3" style="font-size: 14px;">Chương trình tour</h5>
-                </a>
-                <div class="row">
-                    <div class="col-lg-5 col-md-12 col-sm-12 mb-24">
-                        <img src="/assets/img/img-chuong-trinh.png" alt="" class="ms-5 w-75 h-100 rounded">
-                    </div>
-                    <div class="col-lg-7 col-md-12 col-sm-12">
-                        <div class="card">
-                            <div
-                                class="card-header bg-transparent border-primary-subtle tab-content-header fw-semibold">
-                                <i class="fa-solid fa-location-dot"></i> Mỹ Tho - Bến Tre
-                            </div>
-                            <div class="card-body" style="font-size: 14px; text-align: justify;">
-                                <p class="card-text text-black fw-semibold text-decoration-underline mb-1">Buổi sáng:
-                                </p>
-                                <p class="mb-1">• Bắt đầu hành trình <span class="fw-semibold">tour miền Tây 1
-                                        ngày</span>, xe và hướng dẫn viên sẽ đón quý khách tại điểm hẹn và khởi hành
-                                    đến thành phố Mỹ Tho.
-                                </p>
-                                <p class="mb-2">• Tại Mỹ Tho, đoàn sẽ ghé <span class="fw-semibold">trạm dừng chân
-                                        Mekong Rest
-                                        Stop</span> - một điểm dừng chân ấn tượng với du khách khi du lịch miền Tây bởi
-                                    những món đặc sản thơm và những tiểu cảnh của cảnh sắc miền Tây. Tiếp tục hành trình
-                                    du lịch Mỹ Tho, đoàn di chuyển đến bến tàu và thay đổi phương tiện sang thuyền để du
-                                    ngoạn trên sông Tiền, ngắm cù lao - Tứ Linh và tham quan và tham quan Cồn Lân, Cồn
-                                    Phụng. Đầu tiên, quý khách sẽ khám phá <span class="fw-semibold">Cồn Lân với những
-                                        điểm nổi bật:</span>
-                                </p>
-                                <p class="ms-4 mb-1">» Thưởng thức <span class="fw-semibold">trà mật ong hoa nhãn</span>
-                                    thơm
-                                    ngon và chụp hình với tổ ong.
-                                </p>
-                                <p class="ms-4 mb-1">» Tham quan <span class="fw-semibold">cơ sở sản xuất kẹo dừa</span>
-                                    , tìm hiểu quy trình làm kẹo dừa thủ công và dùng thử kẹo dừa mới ra lò.</p>
-                                <p class="ms-4 mb-1">» Dạo vườn trái cây, thưởng thức <span class="fw-semibold">trái cây
-                                        theo mùa</span> và đắm chìm trong giai điệu <span class="fw-semibold">đờn ca tài
-                                        tử</span> mùi mẫn.</p>
-                                <p class="ms-4 mb-1">» Dạo quanh bằng xe ngựa.</p>
-                                <p class="ms-4 mb-2">» <span class="fw-semibold"> Chèo xuồng ba lá</span> len lỏi trên
-                                    con rạch nhỏ giữa hai hàng dừa nước xanh mát.</p>
-                                <p class="card-text text-black fw-semibold text-decoration-underline mb-1">Buổi trưa:
-                                </p>
-                                <p class="mb-1">• Thuyền sẽ đưa quý khách đến <span class="fw-semibold">Cồn Phụng</span>
-                                    dùng bữa
-                                    trưa tại nhà hàng trong <span class="fw-semibold">khu du lịch sinh thái Cồn
-                                        Phụng.</span></p>
-                                <p class="mb-1">• Sau khi dùng bữa trưa, quý khách sẽ có thời gian tự do tham quan Cồn
-                                    phụng, dạo
-                                    quanh
-                                    cù lao và ngắm cảnh làng quê miền Tây yên ả, khám phá, tìm hiểu về <span
-                                        class="fw-semibold">di tích đạo Dừa.</span></p>
-                                <p class="card-text text-black fw-semibold text-decoration-underline mb-1">Buổi chiều:
-                                </p>
-                                <p class="mb-1">• Đoàn sẽ di chuyển đến điểm đến cuối cùng là <span
-                                        class="fw-semibold">chùa Vĩnh
-                                        Tràng</span>, địa điểm du lịch tâm linh nổi tiếng, đồng thời là ngôi chùa cổ lớn
-                                    nhất ở Tiền Giang.</p>
-                                <p>• Khởi hành về lại thành phố Hồ Chí Minh, kết thúc tour du lịch miền Tây 1 ngày.</p>
-                            </div>
-                        </div>
-                    </div>
+</section>
+<div class="container mb-3" ng-controller="TourController">
+    <a href="#" class="text-decoration-none">
+        <h5 class="text-uppercase mb-3">Tour miền tây</h5>
+    </a>
+    <div class="mb-3">Giá tour gốc/khách: <span class="fw-semibold fs-5"
+            style="color: #fb752e;">{{products[index].price|number}}VND</span>
+    </div>
+    <button type="button" class="btn btn-warning rounded-pill">Đặt ngay</button>
+</div>
+<article class="container">
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">Chương trình tour</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Bảng giá</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Thông tin</button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active mt-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+            tabindex="0">
+            <a href="#" class="text-decoration-none">
+                <h5 class="text-uppercase mb-3" style="font-size: 14px;">Chương trình tour</h5>
+            </a>
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 mb-24">
+                    <img src="/assets/img/img-chuong-trinh.png" alt="" class="ms-5 w-75 h-100 rounded">
                 </div>
-            </div>
-            <div class="tab-pane fade mt-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
-                tabindex="0">
-                <a href="#" class="text-decoration-none">
-                    <h5 class="text-uppercase mb-3" style="font-size: 14px;">Bảng giá</h5>
-                </a>
-                <table class="table table-hover table-responsive table-bordered">
-                    <thead class="text-center align-middle">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Khách sạn</th>
-                            <th scope="col">Giá người lớn</th>
-                            <th scope="col">Giá trẻ em</th>
-                            <th scope="col">Suất ăn</th>
-                            <th scope="col">Hành động</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-center align-middle">
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Bốn Phương</td>
-                            <td>450.000 VND</td>
-                            <td>375.000 VND</td>
-                            <td>Trọn gói</td>
-                            <td><button type="button" class="btn btn-warning btn-sm rounded-pill">Đặt ngay</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Mien Tay Hotel</td>
-                            <td>450.000 VND</td>
-                            <td>345.000 VND</td>
-                            <td>Cơm trưa</td>
-                            <td><button type="button" class="btn btn-warning btn-sm rounded-pill">Đặt ngay</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Cô Hai Hotel</td>
-                            <td>450.000 VND</td>
-                            <td>350.000 VND</td>
-                            <td>Cơm trưa</td>
-                            <td><button type="button" class="btn btn-warning btn-sm rounded-pill">Đặt ngay</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="tab-pane fade mt-3" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
-                tabindex="0">
-                <a href="#" class="text-decoration-none">
-                    <h5 class="text-uppercase mb-3" style="font-size: 14px;">Chi tiết</h5>
-                </a>
-                <div class="card">
-                    <div class="card-body" style="font-size: 14px; text-align: justify;">
-                        <div>
-                            <p class="fw-semibold mb-1">Tuor bao gồm:</p>
-                            <p class="mb-1">- Xe du lịch đời mới máy lạnh (15, 29, 35, 45 chỗ tùy theo số lượng khách
-                                từng
-                                ngày).</p>
-                            <p class="mb-1">- HDV song ngữ Anh - Việt, chuyên nghiệp suốt tuyến (tour ghép với người
-                                nước
-                                ngoài). </p>
-                            <p class="mb-1">- Ăn trưa cơm đĩa (tiêu chuẩn thường) hoặc cơm phần 4-5 món. (Các món ăn sẽ
-                                thay
-                                đổi theo từng bữa).</p>
-                            <p class="mb-1">- Tàu tham quan trên sông (có trang bị áo phao), xuồng chèo, trái cây, trà
-                                mật
-                                ong, đờn ca tài tử, xe ngựa. </p>
-                            <p class="mb-1">- Bảo hiểm du lịch 20.000.000 vnđ /vụ.</p>
-
-                            <p class="mb-3">- Nước suối 1 chai/người/ xe tour.</p>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="card-header bg-transparent border-primary-subtle tab-content-header fw-semibold">
+                            <i class="fa-solid fa-location-dot"></i> {{products[index].address}}
                         </div>
-                        <div>
-                            <p class="fw-semibold mb-1">Tuor không bao gồm:</p>
-                            <p class="mb-1">- Chi phí tham quan ngoài chương trình.</p>
-                            <p class="mb-1">- Chi phí ăn uống ngoài chương trình.</p>
-                            <p class="mb-3">- Thuế VAT 08%.</p>
-                        </div>
-                        <div>
-                            <p class="fw-semibold mb-1">Điều kiện trẻ em:</p>
-                            <p class="mb-1">- Trẻ em dưới 4 tuổi được miễn phí vé (ngồi chung với người lớn).</p>
-                            <p class="mb-1">- Trẻ từ 4- dưới 10 tuổi tính 75% giá vé người lớn.</p>
-                            <p class="mb-3">- Trẻ trên 10 tuổi tính giá người lớn.</p>
-                        </div>
-                        <div>
-                            <p class="fw-semibold mb-1">Lưu ý:</p>
-                            <p class="mb-3">Trường hợp hủy không báo trước, đến trễ giờ khởi hành, dời ngày trước 03
-                                ngày khởi hành quý khách phải chịu phạt 100% phí tour và không được hoàn cọc.</p>
+                        <div class="card-body" style="font-size: 14px; text-align: justify;">
+                            <p class="card-text text-black fw-semibold text-decoration-underline mb-1">Buổi sáng:
+                            </p>
+                            <p class="mb-1">• Bắt đầu hành trình <span class="fw-semibold">tour miền Tây 1
+                                    ngày</span>, xe và hướng dẫn viên sẽ đón quý khách tại điểm hẹn và khởi hành
+                                đến thành phố Mỹ Tho.
+                            </p>
+                            <p class="mb-2">• Tại Mỹ Tho, đoàn sẽ ghé <span class="fw-semibold">trạm dừng chân
+                                    Mekong Rest
+                                    Stop</span> - một điểm dừng chân ấn tượng với du khách khi du lịch miền Tây bởi
+                                những món đặc sản thơm và những tiểu cảnh của cảnh sắc miền Tây. Tiếp tục hành trình
+                                du lịch Mỹ Tho, đoàn di chuyển đến bến tàu và thay đổi phương tiện sang thuyền để du
+                                ngoạn trên sông Tiền, ngắm cù lao - Tứ Linh và tham quan và tham quan Cồn Lân, Cồn
+                                Phụng. Đầu tiên, quý khách sẽ khám phá <span class="fw-semibold">Cồn Lân với những
+                                    điểm nổi bật:</span>
+                            </p>
+                            <p class="ms-4 mb-1">» Thưởng thức <span class="fw-semibold">trà mật ong hoa nhãn</span>
+                                thơm
+                                ngon và chụp hình với tổ ong.
+                            </p>
+                            <p class="ms-4 mb-1">» Tham quan <span class="fw-semibold">cơ sở sản xuất kẹo dừa</span>
+                                , tìm hiểu quy trình làm kẹo dừa thủ công và dùng thử kẹo dừa mới ra lò.</p>
+                            <p class="ms-4 mb-1">» Dạo vườn trái cây, thưởng thức <span class="fw-semibold">trái cây
+                                    theo mùa</span> và đắm chìm trong giai điệu <span class="fw-semibold">đờn ca tài
+                                    tử</span> mùi mẫn.</p>
+                            <p class="ms-4 mb-1">» Dạo quanh bằng xe ngựa.</p>
+                            <p class="ms-4 mb-2">» <span class="fw-semibold"> Chèo xuồng ba lá</span> len lỏi trên
+                                con rạch nhỏ giữa hai hàng dừa nước xanh mát.</p>
+                            <p class="card-text text-black fw-semibold text-decoration-underline mb-1">Buổi trưa:
+                            </p>
+                            <p class="mb-1">• Thuyền sẽ đưa quý khách đến <span class="fw-semibold">Cồn Phụng</span>
+                                dùng bữa
+                                trưa tại nhà hàng trong <span class="fw-semibold">khu du lịch sinh thái Cồn
+                                    Phụng.</span></p>
+                            <p class="mb-1">• Sau khi dùng bữa trưa, quý khách sẽ có thời gian tự do tham quan Cồn
+                                phụng, dạo
+                                quanh
+                                cù lao và ngắm cảnh làng quê miền Tây yên ả, khám phá, tìm hiểu về <span
+                                    class="fw-semibold">di tích đạo Dừa.</span></p>
+                            <p class="card-text text-black fw-semibold text-decoration-underline mb-1">Buổi chiều:
+                            </p>
+                            <p class="mb-1">• Đoàn sẽ di chuyển đến điểm đến cuối cùng là <span class="fw-semibold">chùa
+                                    Vĩnh
+                                    Tràng</span>, địa điểm du lịch tâm linh nổi tiếng, đồng thời là ngôi chùa cổ lớn
+                                nhất ở Tiền Giang.</p>
+                            <p>• Khởi hành về lại thành phố Hồ Chí Minh, kết thúc tour du lịch miền Tây 1 ngày.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </article>
-    <div class="container mt-4 mb-5">
-        <div class="card">
-            <div class="card-header text-uppercase fw-semibold"
-                style="background-color: #f9f9f9; color: var( --color-header-card);">
-                Quý khách chưa rõ về chương trình tour vui lòng liên hệ, chúng tôi sẽ tư vấn sớm nhất có thể
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="pt-0">
-                            <label for="exampleInputEmail1" class="form-label">1. Nhập họ tên</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="*">
-                        </div>
+        <div class="tab-pane fade mt-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <a href="#" class="text-decoration-none">
+                <h5 class="text-uppercase mb-3" style="font-size: 14px;">Bảng giá</h5>
+            </a>
+            <table class="table table-hover table-responsive table-bordered">
+                <thead class="text-center align-middle">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Khách sạn</th>
+                        <th scope="col">Giá người lớn</th>
+                        <th scope="col">Giá trẻ em</th>
+                        <th scope="col">Suất ăn</th>
+                        <th scope="col">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center align-middle">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>{{products[index].hotel}}</td>
+                        <td>{{products[index].price | number }} VND</td>
+                        <td>{{products[index].children_price | number}} VND</td>
+                        <td>Trọn gói</td>
+                        <td><button type="button" class="btn btn-warning btn-sm rounded-pill"
+                                ng-click="addCart(products[index])"><a href="#!cart"
+                                    class="text-white text-decoration-none">Đặt ngay</a></button></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade mt-3" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+            <a href="#" class="text-decoration-none">
+                <h5 class="text-uppercase mb-3" style="font-size: 14px;">Chi tiết</h5>
+            </a>
+            <div class="card">
+                <div class="card-body" style="font-size: 14px; text-align: justify;">
+                    <div>
+                        <p class="fw-semibold mb-1">Tuor bao gồm:</p>
+                        <p class="mb-1">- Xe du lịch đời mới máy lạnh (15, 29, 35, 45 chỗ tùy theo số lượng khách
+                            từng
+                            ngày).</p>
+                        <p class="mb-1">- HDV song ngữ Anh - Việt, chuyên nghiệp suốt tuyến (tour ghép với người
+                            nước
+                            ngoài). </p>
+                        <p class="mb-1">- Ăn trưa cơm đĩa (tiêu chuẩn thường) hoặc cơm phần 4-5 món. (Các món ăn sẽ
+                            thay
+                            đổi theo từng bữa).</p>
+                        <p class="mb-1">- Tàu tham quan trên sông (có trang bị áo phao), xuồng chèo, trái cây, trà
+                            mật
+                            ong, đờn ca tài tử, xe ngựa. </p>
+                        <p class="mb-1">- Bảo hiểm du lịch 20.000.000 vnđ /vụ.</p>
+
+                        <p class="mb-3">- Nước suối 1 chai/người/ xe tour.</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <label for="exampleInputEmail1" class="form-label">2. Nhập email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="*">
+                    <div>
+                        <p class="fw-semibold mb-1">Tuor không bao gồm:</p>
+                        <p class="mb-1">- Chi phí tham quan ngoài chương trình.</p>
+                        <p class="mb-1">- Chi phí ăn uống ngoài chương trình.</p>
+                        <p class="mb-3">- Thuế VAT 08%.</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <label for="exampleInputEmail1" class="form-label">3. Nhập số điện thoại</label>
-                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="*">
+                    <div>
+                        <p class="fw-semibold mb-1">Điều kiện trẻ em:</p>
+                        <p class="mb-1">- Trẻ em dưới 4 tuổi được miễn phí vé (ngồi chung với người lớn).</p>
+                        <p class="mb-1">- Trẻ từ 4- dưới 10 tuổi tính 75% giá vé người lớn.</p>
+                        <p class="mb-3">- Trẻ trên 10 tuổi tính giá người lớn.</p>
                     </div>
-                    <div class="col-12 mt-3 mb-3">
-                        <label for="floatingTextarea2" class="mb-2">4. Vui lòng nhập câu hỏi</label>
-                        <textarea class="form-control" placeholder="*" id="floatingTextarea2"
-                            style="height: 100px"></textarea>
+                    <div>
+                        <p class="fw-semibold mb-1">Lưu ý:</p>
+                        <p class="mb-3">Trường hợp hủy không báo trước, đến trễ giờ khởi hành, dời ngày trước 03
+                            ngày khởi hành quý khách phải chịu phạt 100% phí tour và không được hoàn cọc.</p>
                     </div>
                 </div>
-                <button type="button" class="btn btn-warning rounded-pill">Đặt ngay</button>
             </div>
         </div>
     </div>
-    <script src="/assets/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+</article>
+<div class="container mt-4 mb-5">
+    <div class="card">
+        <div class="card-header text-uppercase fw-semibold"
+            style="background-color: #f9f9f9; color: var( --color-header-card);">
+            Quý khách chưa rõ về chương trình tour vui lòng liên hệ, chúng tôi sẽ tư vấn sớm nhất có thể
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="pt-0">
+                        <label for="exampleInputEmail1" class="form-label">1. Nhập họ tên</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="*">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <label for="exampleInputEmail1" class="form-label">2. Nhập email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="*">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <label for="exampleInputEmail1" class="form-label">3. Nhập số điện thoại</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="*">
+                </div>
+                <div class="col-12 mt-3 mb-3">
+                    <label for="floatingTextarea2" class="mb-2">4. Vui lòng nhập câu hỏi</label>
+                    <textarea class="form-control" placeholder="*" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                </div>
+            </div>
+            <button type="button" class="btn btn-warning rounded-pill">Đặt ngay</button>
+        </div>
+    </div>
+</div>
