@@ -12,9 +12,12 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
                 $scope.index = i;
             }
         }
-
+//  phân trang
         $scope.totalItems = $scope.products.length;
         $scope.totalPages = Math.ceil($scope.totalItems / $scope.itemsPerPage);
+        $scope.setPage = function (page) {
+            $scope.currentPage = page;
+        }
         $scope.getPages = function () {
             var pages = [];
             for (var i = 1; i <= $scope.totalPages; i++) {
@@ -28,17 +31,17 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
         if (typeof $rootScope.cart === 'undefined') {
             $rootScope.cart = [];
         }
-        var index = $rootScope.cart.findIndex((item) => item.id == product.id);
-        if (index == -1) {
+        var isProductInCart = $rootScope.cart.some((item) => item.id === product.id);
+        if (!isProductInCart) {
+            // Nếu sản phẩm chưa có trong giỏ hàng, thêm mới
             product.quantity = 1;
             $rootScope.cart.push(product);
             $rootScope.countCart = $rootScope.cart.length;
         } else {
+            // Nếu sản phẩm đã có trong giỏ hàng, tăng số lượng
+            var index = $rootScope.cart.findIndex((item) => item.id === product.id);
             $rootScope.cart[index].quantity++;
         }
-        //count cart
-        
-        console.log($rootScope.cart);
 
     }
     // remove to cart
@@ -59,10 +62,20 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
         product.quantity++;
     };
 
-
-
     $rootScope.search = function (input) {
         $rootScope.keySearch = input;
+    };
+
+    // tính tổng tiền
+    $scope.getTotalPrice = function () {
+        var total = 0;
+        for (var i = 0; i < $rootScope.cart.length; i++) {
+            total += $rootScope.cart[i].price * $rootScope.cart[i].quantity;
+        }
+        return total;
+    };
+    $scope.isCartEmpty = function () {
+        return !$rootScope.cart || $rootScope.cart.length === 0;
     };
 });
 

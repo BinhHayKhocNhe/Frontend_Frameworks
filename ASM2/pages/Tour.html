@@ -20,7 +20,7 @@
     </a>
     <div class="row">
         <div class="col-lg-4 mb-4 col-md-6 col-sm-12"
-            ng-repeat="p in products | filter: keySearch | limitTo: 6 : page | orderBy : sort">
+            ng-repeat="p in products | filter: keySearch | limitTo: itemsPerPage :(currentPage -1) * itemsPerPage  | orderBy : sort">
             <div class="card">
                 <a href="#!chiTiet/{{p.id}}" class="box-img"><img src="{{p.img}}" class="card-img-top" alt="..."></a>
                 <div class="card-body">
@@ -47,11 +47,15 @@
 <div class="container d-flex justify-content-center mb-5">
     <nav aria-label="Page navigation example">
         <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Đầu tiên</a></li>
-            <li class="page-item" ng-repeat="page in getPages()" ng-class="{ active: currentPage === page }">
-                <a class="page-link" href="#">{{page}}</a>
+            <li class="page-item">
+                <a class="page-link" ng-click="setPage(1)">Đầu tiên</a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">Cuối cùng</a></li>
+            <li class="page-item" ng-repeat="page in getPages()" ng-class="{ active: currentPage === page }">
+                <a class="page-link" ng-click="setPage(page)">{{page}}</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" ng-click="setPage(totalPages)">Cuối cùng</a>
+            </li>
         </ul>
     </nav>
 </div>

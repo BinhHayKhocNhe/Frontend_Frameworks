@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+</head>
+
+<body ng-app="myApp" ng-controller="myController">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 mt-4" ng-repeat="p in products">
+                <div class="card text-center">
+                    <div class="card-header" ng-bind="p.name"></div>
+                    <div class="card-body">
+                        <img src="{{ p.img }}" alt="{{p.name}}" class="w-50">
+                    </div>
+                    <div class="card-footer text-body-secondary"> ${{p.price}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/angular-1.8.2/angular.min.js"></script>
+    <script src="/assets/angular-1.8.2/angular-route.min.js"></script>
+    <script src="/assets/js/Bai_5.js"></script>
+</body>
+
+</html>

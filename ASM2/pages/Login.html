@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/assets/css/base.css">
 </head>
 
-<body>
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+<body ng-app="myApp">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100" ng-controller="myCtrl">
         <div class="row border rounded bg-light shadow size-box bg-opacity-75">
             <div class="col-md-6 left-box border rounded">
             </div>
@@ -24,12 +24,12 @@
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
                         <input type="email" class="form-control" placeholder="Email" aria-label="Username"
-                            aria-describedby="basic-addon1" id="floatingInput" required>
+                            aria-describedby="basic-addon1" id="floatingInput" required ng-model="username">
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" class="form-control input-pass" placeholder="Mật khẩu" aria-label="Password"
-                            aria-describedby="basic-addon1" required>
+                        <input type="password" class="form-control input-pass" placeholder="Mật khẩu"
+                            aria-label="Password" aria-describedby="basic-addon1" required ng-model="password">
                         <button type="button" class="btn position-absolute btn-eye">
                             <i class="fa-regular fa-eye"></i>
                         </button>
@@ -40,7 +40,8 @@
                         <span>Lưu đăng nhập</span>
                     </div>
                     <div class="input-group mb-3">
-                        <button class="btn btn-primary w-100 rounded" type="button" id="button-addon1">Đăng
+                        <button class="btn btn-primary w-100 rounded" type="button" id="button-addon1"
+                            ng-click="login()">Đăng
                             nhập</button>
                     </div>
                     <div class="mb-3 d-flex justify-content-center">Hoặc</div>
@@ -52,16 +53,16 @@
                     <div class="input-group mb-3 d-flex justify-content-between">
                         <a href="#" class="text-decoration-none">Quên mật khẩu</a>
                         <p>Chưa có tài khoản?
-                            <a href="Register.html" class="" style="user-select: none;"> Đăng kí</a>
+                            <a href="Register.html" class="" style="user-select: none;">Đăng kí</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
     <script src="/assets/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/angular-1.8.2/angular.min.js"></script>
+    <script src="/assets/js/account.js"></script>
 </body>
 
 </html>
