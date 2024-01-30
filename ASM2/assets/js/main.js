@@ -12,7 +12,7 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
                 $scope.index = i;
             }
         }
-//  phân trang
+        //  phân trang
         $scope.totalItems = $scope.products.length;
         $scope.totalPages = Math.ceil($scope.totalItems / $scope.itemsPerPage);
         $scope.setPage = function (page) {
@@ -42,7 +42,6 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
             var index = $rootScope.cart.findIndex((item) => item.id === product.id);
             $rootScope.cart[index].quantity++;
         }
-
     }
     // remove to cart
     $scope.deleteCart = function (index) {
@@ -66,16 +65,67 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
         $rootScope.keySearch = input;
     };
 
+    // Bắt sự kiện thanh toán sản phẩm và giá tiền
+    $scope.setPaymentType = function (value, totalPrice) {
+        $scope.paymentType = value;
+        // lưu giá tiền sản phẩm chọn
+        $scope.selectedProductTotalPrice = totalPrice;
+    };
+
+
     // tính tổng tiền
     $scope.getTotalPrice = function () {
-        var total = 0;
-        for (var i = 0; i < $rootScope.cart.length; i++) {
-            total += $rootScope.cart[i].price * $rootScope.cart[i].quantity;
+        var totalPrice = 0;
+        if ($rootScope.cart) {
+            $rootScope.cart.forEach(function (product) {
+                totalPrice += product.price * product.quantity;
+            });
         }
-        return total;
+        console.log(totalPrice)
+        return totalPrice;
     };
-    $scope.isCartEmpty = function () {
-        return !$rootScope.cart || $rootScope.cart.length === 0;
+
+    $scope.sort = 'price'; // Giá trị mặc định
+    $scope.onChangeSort = function () {
+        switch ($scope.selectedSort) {
+            case 'az':
+                $scope.sort = '';
+                console.log("Tăng dần theo A-Z");
+                break;
+            case 'za':
+                $scope.sort= '-';
+                console.log("Giảm dần theo Z-A");
+                break;
+            case 'lowToHigh':
+                $scope.sort = 'price';
+                console.log("Từ thấp đến cao");
+                break;
+            case 'highToLow':
+                $scope.sort = '-price';
+                console.log("Từ cao đến thấp");
+                break;
+            default:
+                $scope.sort = 'price';
+                break;
+        }
+        // $scope.onChangeSort = function () {
+        //     if ($scope.selectedSort === 'az') {
+        //         $scope.sort = 'price';
+        //         console.log("Tăng dần theo A-Z");
+        //     } else if ($scope.selectedSort === 'za') {
+        //         $scope.sort = '-price';
+        //         console.log("Giảm dần theo Z-A");
+        //     } else if ($scope.selectedSort === 'lowToHigh') {
+        //         $scope.sort = 'price';
+        //         console.log("Từ thấp đến cao");
+        //     } else if ($scope.selectedSort === 'highToLow') {
+        //         $scope.sort = '-price';
+        //         console.log("Từ cao đến thấp");
+        //     } else {
+        //         $scope.sort = 'price';
+        //         console.log("Mặc định");
+        //     }
+        // };
     };
 });
 
