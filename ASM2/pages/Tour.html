@@ -13,6 +13,7 @@
             <option value="za">Từ Z-A</option>
             <option value="lowToHigh">Từ thấp đến cao</option>
             <option value="highToLow">Từ cao đến thấp</option>
+            <option value="love">Được yêu thích</option>
         </select>
     </div>
 </section>
@@ -22,7 +23,7 @@
     </a>
     <div class="row">
         <div class="col-lg-4 mb-4 col-md-6 col-sm-12"
-            ng-repeat="p in products | filter: keySearch | limitTo: itemsPerPage :(currentPage -1) * itemsPerPage  | orderBy : sort">
+            ng-repeat="p in products | filter: { love: love } | orderBy : sort | limitTo: itemsPerPage :(currentPage -1) * itemsPerPage">
             <div class="card">
                 <a href="#!chiTiet/{{p.id}}" class="box-img"><img src="{{p.img}}" class="card-img-top" alt="..."></a>
                 <div class="card-body">

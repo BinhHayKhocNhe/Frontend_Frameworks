@@ -86,14 +86,15 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
     };
 
     $scope.sort = 'price'; // Giá trị mặc định
+    $scope.love = undefined;
     $scope.onChangeSort = function () {
         switch ($scope.selectedSort) {
             case 'az':
-                $scope.sort = '';
+                $scope.sort = 'id';
                 console.log("Tăng dần theo A-Z");
                 break;
             case 'za':
-                $scope.sort= '-';
+                $scope.sort = '-id';
                 console.log("Giảm dần theo Z-A");
                 break;
             case 'lowToHigh':
@@ -104,8 +105,13 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
                 $scope.sort = '-price';
                 console.log("Từ cao đến thấp");
                 break;
+            case 'love':
+                $scope.love = true;
+                console.log("True");
+                break;
             default:
                 $scope.sort = 'price';
+                $scope.love = undefined;
                 break;
         }
         // $scope.onChangeSort = function () {

@@ -9,7 +9,8 @@
         "cart": 452,
         "address": "Mỹ Tho - Bến Tre",
         "hotel": "Bốn Phương",
-        "children_price": 375000
+        "children_price": 375000,
+        "love": true
     },
     {
         "id": "TU002",
@@ -21,7 +22,8 @@
         "cart": 784,
         "address": "Tiền Giang - Bến Tre",
         "hotel": "Miền Tây Hotel",
-        "children_price": 1250000
+        "children_price": 1250000,
+        "love": false
     },
     {
         "id": "TU003",
@@ -33,7 +35,8 @@
         "cart": 140,
         "address": "Cần Thơ - Cà Mau",
         "hotel": "Cô Hai",
-        "children_price": 2500000
+        "children_price": 2500000,
+        "love": true
     },
     {
         "id": "TU004",
@@ -45,7 +48,8 @@
         "cart": 40,
         "address": "Tiền Giang - Bến Tre - Trà Vinh",
         "hotel": "Việt Đức",
-        "children_price": 2080000
+        "children_price": 2080000,
+        "love": false
     },
     {
         "id": "TU005",
@@ -57,7 +61,8 @@
         "cart": 180,
         "address": "Sa Đéc - Cần Thơ - Cà Mau",
         "hotel": "Bà Vân",
-        "children_price": 3900000
+        "children_price": 3900000,
+        "love": false
     },
     {
         "id": "TU006",
@@ -69,7 +74,8 @@
         "cart": 150,
         "address": "Sa Đéc - Cần Thơ - Cà Mau",
         "hotel": "Long Hải",
-        "children_price": 1290000
+        "children_price": 1290000,
+        "love": false
     },
     {
         "id": "TU007",
@@ -79,7 +85,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": false
     },
     {
         "id": "TU008",
@@ -89,7 +97,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": true
     },
     {
         "id": "TU009",
@@ -99,7 +109,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": false
     },
     {
         "id": "TU010",
@@ -109,7 +121,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": true
     },
     {
         "id": "TU011",
@@ -119,7 +133,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": false
     },
     {
         "id": "TU012",
@@ -129,7 +145,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": true
     },
     {
         "id": "TU013",
@@ -139,7 +157,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": false
     },
     {
         "id": "TU014",
@@ -149,7 +169,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": true
     },
     {
         "id": "TU015",
@@ -159,7 +181,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": false
     },
     {
         "id": "TU016",
@@ -169,7 +193,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": true
     },
     {
         "id": "TU017",
@@ -179,7 +205,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": false
     },
     {
         "id": "TU018",
@@ -189,7 +217,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": true
     },
     {
         "id": "TU019",
@@ -199,7 +229,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": false
     },
     {
         "id": "TU020",
@@ -209,7 +241,9 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": false
     },
     {
         "id": "TU0021",
@@ -219,6 +253,8 @@
         "eye": 7840,
         "cmt": 98,
         "cart": 150,
-        "address": "Cần Thơ"
+        "address": "Cần Thơ",
+        "children_price": 375000,
+        "love": false
     }
 ]
