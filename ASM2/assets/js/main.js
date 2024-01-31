@@ -136,6 +136,11 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
         //     }
         // };
     };
+
+    // Đăng nhập, đăng kí
+    $scope.account =[
+        
+    ];
 });
 
 

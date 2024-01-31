@@ -1,55 +1,91 @@
+
+
 var app = angular.module("myApp", []);
-app.controller("myCtrl", function ($scope, $http) {
-    $scope.account = [];
-    $http.get("/assets/js/account.json").then(function (reponse) {
-        $scope.account = reponse.data;
-    });
+
+app.run(function ($rootScope) {
+    // Kiểm tra xem dữ liệu đã được lưu trong localStorage chưa
+    var storedAccounts = localStorage.getItem("accounts");
+
+    // Nếu đã có dữ liệu, sử dụng nó. Nếu không, sử dụng dữ liệu mặc định
+    $rootScope.accounts = storedAccounts ? JSON.parse(storedAccounts) : [
+        {
+            "fullName": "Dương Minh Bình",
+            "email": "binhdmps32770@fpt.edu.vn",
+            "pass": "binhdeptrai",
+            "phone": "0385193525"
+        },
+        {
+            "fullName": "Đỗ Mỹ Thuận",
+            "email": "thuan@fpt.edu.vn",
+            "pass": "thuanbim",
+            "phone": "0121546987"
+        }
+    ];
+});
+
+app.controller("LoginController", function ($scope, $rootScope) {
+    $scope.username = "";
+    $scope.password = "";
+
     $scope.login = function () {
-        var username = $scope.username;
-        var password = $scope.password;
-        var loggedIn = $scope.account.some(function (user) {
-            return user.email === username && user.pass === password;
+        var user = $rootScope.accounts.find(function (account) {
+            return account.email === $scope.username && account.pass === $scope.password;
         });
 
-        if (loggedIn) {
-            alert('Đăng nhập thành công!');
+        if (user) {
             window.location.href = 'index.html';
         } else {
-            alert('Đăng nhập thất bại. Vui lòng kiểm tra email và mật khẩu.');
+            alert("Đăng nhập thất bại. Vui lòng kiểm tra lại email và mật khẩu.");
         }
-    }
+    };
+});
+
+app.controller("RegisterController", function ($scope, $rootScope) {
+    $scope.modalMessage = ""; // Biến để chứa thông báo
+
+    // Hàm để ẩn modal
+    $scope.hideModal = function () {
+        $scope.showModal = false;
+    };
+
     $scope.register = function () {
-        var fullName = $scope.fullName;
-        var email = $scope.email;
-        var passWord = $scope.passWord;
-        var phone = $scope.phone;
-        var enterPassword = $scope.enterPassword;
-        // Kiểm tra xem email đã được đăng ký trước đó chưa
-        var isEmailExist = $scope.account.some(function (user) {
-            return user.email === email;
+        if (!$scope.newFullName || !$scope.newEmail || !$scope.newPassword || !$scope.newPhone || !$scope.confirmPassword) {
+            $scope.modalMessage = "Vui lòng nhập đầy đủ thông tin.";
+            return;
+        }
+
+        if ($scope.newPassword.length < 8) {
+            $scope.modalMessage = "Mật khẩu phải có ít nhất 8 kí tự.";
+            return;
+        }
+        //    Kiểm tra xem mật khẩu có chứa kí tự đặc biệt hay không
+        var specialCharacterRegex = /[!@#$%^&*(),.?":{}|<>]/;
+        if (!specialCharacterRegex.test($scope.newPassword)) {
+            $scope.modalMessage = "Mật khẩu phải chứa ít nhất một kí tự đặc biệt.";
+            return;
+        }
+        if ($scope.newPassword !== $scope.confirmPassword) {
+            $scope.modalMessage = "Mật khẩu và mật khẩu nhập lại không trùng khớp.";
+            return;
+        }
+        var existingUser = $rootScope.accounts.find(function (account) {
+            return account.email === $scope.newEmail;
         });
 
-        if (isEmailExist) {
-            alert('Email đã được đăng ký trước đó. Vui lòng chọn email khác.');
-            return;
-        }
-        if (passWord !== enterPassword) {
-            alert('Mật khẩu nhập lại không trùng khớp. Vui lòng kiểm tra lại.');
-            return;
-        }
-        // Thêm người dùng mới vào danh sách
-        var newUser = {
-            fullName: fullName,
-            email: email,
-            pass: passWord,
-            phone: phone
-        };
+        if (existingUser) {
+            $scope.modalMessage = "Email đã tồn tại. Vui lòng sử dụng email khác.";
+        } else {
+            $rootScope.accounts.push({
+                "fullName": $scope.newFullName,
+                "email": $scope.newEmail,
+                "pass": $scope.newPassword,
+                "phone": $scope.newPhone
+            });
 
-        $scope.account.push(newUser);
-
-        alert('Đăng ký thành công!');
-        // Thực hiện chuyển hướng sau khi đăng ký thành công
-        window.location.href = 'Login.html';
+            // Lưu trữ dữ liệu vào localStorage
+            localStorage.setItem("accounts", JSON.stringify($rootScope.accounts));
+            window.location.href = 'Login.html'
+        }
     };
-}
-);
+});
+
