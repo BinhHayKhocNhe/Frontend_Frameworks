@@ -12,6 +12,9 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
                 $scope.index = i;
             }
         }
+        $rootScope.search = function (input) {
+            $rootScope.keySearch = input;
+        };
         //  phân trang
         $scope.totalItems = $scope.products.length;
         $scope.totalPages = Math.ceil($scope.totalItems / $scope.itemsPerPage);

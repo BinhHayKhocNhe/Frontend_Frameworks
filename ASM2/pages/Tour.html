@@ -19,11 +19,11 @@
 </section>
 <div class="container">
     <a href="#" class="text-decoration-none">
-        <h5 class="text-uppercase mb-3">Tour miền tây</h5>
+        <h5 class="text-uppercase mb-3">Tour Trong nước</h5>
     </a>
     <div class="row">
         <div class="col-lg-4 mb-4 col-md-6 col-sm-12"
-            ng-repeat="p in products | filter: { love: love } | orderBy : sort | limitTo: itemsPerPage :(currentPage -1) * itemsPerPage">
+            ng-repeat="p in products | filter: { love: love } | filter: { $: keySearch }| orderBy : sort | limitTo: itemsPerPage :(currentPage -1) * itemsPerPage">
             <div class="card">
                 <a href="#!chiTiet/{{p.id}}" class="box-img"><img src="{{p.img}}" class="card-img-top" alt="..."></a>
                 <div class="card-body">
