@@ -137,10 +137,20 @@ app.controller("TourController", function ($scope, $rootScope, $routeParams, $ht
         // };
     };
 
-    // Đăng nhập, đăng kí
-    $scope.account =[
-        
-    ];
+    $scope.adults = createRangeArray(1, 20);
+    $scope.children = createRangeArray(1, 20);
+    $scope.treNhos = createRangeArray(1, 20);
+
+    $scope.adults.push('Trên 20');
+    $scope.children.push('Trên 20');
+    $scope.treNhos.push('Trên 20');
+    function createRangeArray(start, end) {
+        var result = [];
+        for (var i = start; i <= end; i++) {
+            result.push(i.toString());
+        }
+        return result;
+    }
 });
 
 

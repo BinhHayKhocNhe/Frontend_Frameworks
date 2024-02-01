@@ -92,23 +92,26 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="mt-4 d-flex justify-content-between flex__column">
+                        <div class="mt-4 d-flex justify-content-between flex__column"
+                            ng-init="selectedAdult = '1'; selectedChild = '1'; selectedTreNho = '1'">
                             <div>
                                 <p class="">Người lớn</p>
                                 <select class="form-select width-option mb-24" aria-label="Default select example"
-                                    id="adultsSelect">
+                                    id="adultsSelect" ng-model="selectedAdult" ng-options="option for option in adults">
                                 </select>
                             </div>
                             <div>
                                 <p class="">Trẻ em</p>
                                 <select class="form-select width-option mb-24" aria-label="Default select example"
-                                    id="childrenSelect">
+                                    id="childrenSelect" ng-model="selectedChild"
+                                    ng-options="option for option in children">
+
                                 </select>
                             </div>
                             <div>
                                 <p class="">Trẻ nhỏ</p>
                                 <select class="form-select width-option mb-24" aria-label="Default select example"
-                                    id="treNho">
+                                    id="treNho" ng-model="selectedTreNho" ng-options="option for option in treNhos">
                                 </select>
                             </div>
                         </div>
@@ -175,5 +178,6 @@
 </body>
 <script src="/assets/angular-1.8.2/angular.min.js"></script>
 <script src="/assets/angular-1.8.2/angular-route.js"></script>
-<script src="/assets/js/Buy_Tour.js"></script>
+<script src="/assets/js/main.js"></script>
+
 </html>
