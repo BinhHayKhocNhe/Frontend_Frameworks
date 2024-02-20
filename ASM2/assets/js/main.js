@@ -180,6 +180,10 @@ app.config(function ($routeProvider) {
             templateUrl: "GioHang.html?",
             controller: "TourController"
         })
+        .when("/changePass", {
+            templateUrl: "ChangePass.html?",
+            controller: "TourController"
+        })
         .otherwise({
             // redirectTo: "/home",
             templateUrl: "home.html",

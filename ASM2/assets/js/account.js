@@ -1,5 +1,4 @@
 
-
 var app = angular.module("myApp", []);
 
 app.run(function ($rootScope) {
@@ -26,8 +25,11 @@ app.run(function ($rootScope) {
 app.controller("LoginController", function ($scope, $rootScope) {
     $scope.username = "";
     $scope.password = "";
-
     $scope.login = function () {
+        if (!$scope.username || !$scope.password) {
+            $scope.showAlert = "Vui lòng nhập đầy đủ tên tài khoản và mật khẩu.";
+            return;
+        }
         var user = $rootScope.accounts.find(function (account) {
             return account.email === $scope.username && account.pass === $scope.password;
         });
@@ -35,7 +37,7 @@ app.controller("LoginController", function ($scope, $rootScope) {
         if (user) {
             window.location.href = 'index.html';
         } else {
-            alert("Đăng nhập thất bại. Vui lòng kiểm tra lại email và mật khẩu.");
+            $scope.showAlert = "Email hoặc mật khẩu không chính xác";
         }
     };
 });
@@ -89,3 +91,40 @@ app.controller("RegisterController", function ($scope, $rootScope) {
     };
 });
 
+app.controller("ChangePasswordController", function ($scope, $rootScope) {
+    $scope.currentPassword = "";
+    $scope.newPassword = "";
+    $scope.confirmNewPassword = "";
+
+    $scope.changePassword = function () {
+        var currentUser = $rootScope.currentUser;
+
+        if (!$rootScope.currentUser) {
+            // Nếu không có người dùng nào đang đăng nhập, chuyển hướng đến trang đăng nhập
+            alert("Vui lòng đăng nhập trước khi đổi mật khẩu.");
+            window.location.href = 'Login.html'; // hoặc trang đăng nhập của bạn
+            return;
+        }
+
+        if ($scope.currentPassword !== currentUser.pass) {
+            alert("Mật khẩu hiện tại không chính xác.");
+            return;
+        }
+
+        if ($scope.newPassword !== $scope.confirmNewPassword) {
+            alert("Mật khẩu mới và xác nhận mật khẩu mới không trùng khớp.");
+            return;
+        }
+
+        // Cập nhật mật khẩu mới cho người dùng
+        currentUser.pass = $scope.newPassword;
+
+        // Lưu trữ dữ liệu vào Local Storage
+        localStorage.setItem("accounts", JSON.stringify($rootScope.accounts));
+
+        alert("Đổi mật khẩu thành công.");
+
+        // Chuyển hướng đến trang chính hoặc trang đăng nhập
+        // window.location.href = 'index.html'; // hoặc 'Login.html' tùy vào luồng của ứng dụng
+    };
+});
