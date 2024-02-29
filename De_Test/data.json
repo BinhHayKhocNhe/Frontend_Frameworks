@@ -1,0 +1,58 @@
+[
+    {
+        "id": "id01",
+        "title": "Đầm midi xốp hoa 2 dây xếp li hồng",
+        "img": "https://product.hstatic.net/1000197303/product/pro_hong_2_164f7171b1b144a3801393df891a7479_grande.jpg",
+        "price": 1500000,
+        "loai": "nobrand"
+    },
+    {
+        "id": "id02",
+        "title": "Đầm ren mini cổ yếm form rộng cột nơ sau",
+        "img": "https://product.hstatic.net/1000197303/product/pro_trang_2_40304f486441430f9e038ae9dbd58998_grande.jpg",
+        "price": 795000,
+        "loai": "Cardina"
+    },
+    {
+        "id": "id03",
+        "title": "Đầm midi 2 dây bẹt vai đính nơ ngực",
+        "img": "https://product.hstatic.net/1000197303/product/pro_do_2_2059f2aaeac641eda2a1eea83bc60929_grande.jpg",
+        "price": 25000000,
+        "loai": "hungviet"
+    },
+    {
+        "id": "id04",
+        "title": "Đầm gấm hoa tay phồng cổ vuông đính nơ",
+        "img": "https://product.hstatic.net/1000197303/product/pro_trang_2_82da90134bf1450fbaff925396aa3ae5_grande.jpg",
+        "price": 999000,
+        "loai": "Pmax"
+    },
+    {
+        "id": "id05",
+        "title": "Đầm mini cổ tròn tay ngắn rã hông 2 túi",
+        "img": "https://product.hstatic.net/1000197303/product/pro_den_1_37bfd4afeb9347748cb003d4d3b5a61c_grande.jpg",
+        "price": 297500,
+        "loai": "huonggiang"
+    },
+    {
+        "id": "id06",
+        "title": "Đầm babydoll tay phồng phối lá cổ",
+        "img": "https://product.hstatic.net/1000197303/product/pro_xanh_duong_dam_2_006553a4f10f488ea23ea1f39b09094d_grande.jpg",
+        "price": 410000,
+        "loai": "huonggiang"
+    },
+    {
+        "id": "id07",
+        "title": "Đầm mini vải xốp cổ tròn tay phồng",
+        "img": "https://product.hstatic.net/1000197303/product/pro_do_3_bf00c462df8947caa852c4c7778491c8_grande.jpg",
+        "price": 208500,
+        "loai": "hungviet"
+    },
+    {
+        "id": "id08",
+        "title": "Đầm mini tay phồng lá cổ phối viền",
+        "img": "https://product.hstatic.net/1000197303/product/pro_da_3_75ef4094d5e242018c21a2ebe9069767_grande.jpg",
+        "price": 840571,
+        "loai": "nobrand"
+    }
+]
